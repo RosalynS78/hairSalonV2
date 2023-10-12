@@ -1,0 +1,1423 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr 1.9fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header"
+        "content content content"
+        "footer footer footer";
+}
+
+
+.header {
+    grid-area: header;
+    background-image: url("/assets/logo/headerbg2.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 125px;
+    padding-left: 55px;
+}
+
+.hairlogo {
+    display: flex;
+    margin-top: 130px;
+    margin-left: 150px;
+    margin-right: 130px;
+    height: 100px;
+    width: 100px;
+    transform: translateX(0px);
+    animation: float 6s ease-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    30% {
+        transform: translateY(-35px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.title1 {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 150px;
+    font-family: 'Rubik Wet Paint', cursive;
+    font-size: 105px;
+}
+
+.title2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.menu {
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    /* transparency */
+    opacity: .9;
+    background-color: #111111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 230px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-family: 'Rubik Wet Paint', cursive;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 5px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+.sidenav a:hover::before {
+    width: 80%;
+    filter: drop-shadow(0 0 25px var(--clr))
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 35px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* burger menu */
+#main {
+    display: none;
+    background-color: black;
+    color: white;
+    transition: margin-left .5s;
+    padding: 15px;
+}
+
+/* horizontal menu */
+#horizontal {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    font-family: 'Marvel', sans-serif;
+    font-weight: bold;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 400ms all ease-in-out 50ms;
+    backface-visibility: hidden;
+}
+
+.containerMenu {
+    background-color: rgb(3, 3, 3);
+    display: flex;
+}
+
+.containerMenu .btn {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 55px;
+}
+
+.containerMenu .btn a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(25px);
+}
+
+.containerMenu .btn:hover a {
+    Letter-spacing: 3px;
+}
+
+.containerMenu .btn a::before {
+    content: '';
+    position: absolute;
+    transition: 0.5s;
+}
+
+.containerMenu .btn::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.containerMenu .btn:hover::before {
+    left: 50%;
+    bottom: 0;
+    width: 80%;
+    transition-delay: 0.5s;
+}
+
+.containerMenu .btn::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+    width: 30px;
+    height: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.containerMenu .btn:hover::after {
+    left: 50%;
+    top: 0;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+
+}
+
+.containerMenu .btn:nth-child(1)::before,
+.containerMenu .btn:nth-child(1)::after {
+    background: rgb(255, 255, 0);
+    box-shadow: 0 0 5px yellow,
+        0 0 15px yellow,
+        0 0 30px yellow,
+        0 0 60px yellow;
+}
+
+.containerMenu .btn:nth-child(2)::before,
+.containerMenu .btn:nth-child(2)::after {
+    background: orange;
+    box-shadow: 0 0 5px orange,
+        0 0 15px orange,
+        0 0 30px orange,
+        0 0 60px orange;
+}
+
+.containerMenu .btn:nth-child(3)::before,
+.containerMenu .btn:nth-child(3)::after {
+    background: pink;
+    box-shadow: 0 0 5px pink,
+        0 0 15px pink,
+        0 0 30px pink,
+        0 0 60px pink;
+}
+
+.containerMenu .btn:nth-child(4)::before,
+.containerMenu .btn:nth-child(4)::after {
+    background: fuchsia;
+    box-shadow: 0 0 5px fuchsia,
+        0 0 15px fuchsia,
+        0 0 30px fuchsia,
+        0 0 60px fuchsia;
+}
+
+.containerMenu .btn:nth-child(5)::before,
+.containerMenu .btn:nth-child(5)::after {
+    background: #8812a5;
+    box-shadow: 0 0 5px #8812a5,
+        0 0 15px #8812a5,
+        0 0 30px #8812a5,
+        0 0 60px #8812a5;
+}
+
+/* end button effects */
+
+/* hero cards */
+/* card-1 */
+.card-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 355px;
+    min-width: 250px;
+    width: 300px;
+    background: #fff;
+    position: relative;
+
+    /* background: linear-gradient(to right, #000000, #434343); */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 160px;
+    font-family: 'Marvel', sans-serif;
+    font-weight: bold;
+}
+
+/* hidden card 1 */
+.hidden1 {
+    display: none;
+}
+
+.hidden2 {
+    display: none;
+}
+
+.card-1 .cardContent {
+    margin: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 10px;
+}
+
+.card-1 .cardHeading {
+    font-size: 45px;
+    transition: 0.4s;
+    color: black;
+    pointer-events: none;
+    /* color: #8796a4b8; */
+}
+
+.card-1:hover .cardHeading {
+    font-size: 40px;
+    color: black;
+    /* color: #6f7a85; */
+}
+
+.card-1 .para {
+    margin-top: 15px;
+    width: 235px;
+
+    font-size: 18px;
+    transition: 0.4s;
+    opacity: 0;
+    color: black;
+    /* color: #88919b; */
+    list-style-type: none;
+}
+
+.card-1 .cardBtn {
+    margin-top: 15px;
+    padding: 0.2rem 1rem;
+    border: 2px solid #6f7a85;
+    transition: 0.4s;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    color: #6f7a85;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 500;
+    opacity: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-1 .cardBtn:hover {
+    /* background: #6f7a85; */
+    background: black;
+    box-shadow: 0 0 5px fuchsia,
+        0 0 15px fuchsia,
+        0 0 30px fuchsia,
+        0 0 60px fuchsia;
+    color: white;
+    border-style: none;
+}
+
+.card-1:hover .para,
+.card-1:hover .cardBtn {
+    opacity: 1;
+}
+
+.card-1 img {
+    position: absolute;
+    top: -45%;
+    left: 26%;
+    width: 100px;
+    height: auto;
+    transition: 0.4s;
+}
+
+.card-1:hover img {
+    top: -50%;
+    left: 42%;
+    scale: 150%;
+}
+
+
+/* card-2 */
+
+.card-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 355px;
+    min-width: 250px;
+    width: 300px;
+    background: #fff;
+    position: relative;
+    /* top, right, bottom left*/
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 350px;
+    font-family: 'Marvel', sans-serif;
+    font-weight: bold;
+}
+
+.card-2 .cardContent {
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 10px;
+}
+
+.card-2 .cardHeading {
+    font-size: 45px;
+    transition: 0.4s;
+    color: black;
+    pointer-events: none;
+}
+
+.card-2:hover .cardHeading {
+    font-size: 40px;
+    color: black;
+}
+
+.card-2 .para {
+    margin-top: 15px;
+    width: 235px;
+    font-size: 18px;
+    transition: 0.4s;
+    opacity: 0;
+    color: black;
+    list-style-type: none;
+}
+
+.card-2 .cardBtn {
+    margin-top: 15px;
+    padding: 0.2rem 1rem;
+    border: 2px solid #6f7a85;
+    transition: 0.4s;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    color: #6f7a85;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 500;
+    opacity: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-2 .cardBtn:hover {
+    /* background: #6f7a85;
+    color: #ffffffaf; */
+    background: black;
+    box-shadow: 0 0 5px yellow,
+        0 0 15px yellow,
+        0 0 30px yellow,
+        0 0 60px yellow;
+    color: white;
+    border-style: none;
+}
+
+.card-2:hover .para,
+.card-2:hover .cardBtn {
+    opacity: 1;
+}
+
+.card-2 img {
+    position: absolute;
+    top: -35%;
+    left: 40%;
+    width: 200px;
+    height: auto;
+    transition: 0.4s;
+}
+
+.card-2:hover img {
+    top: -60%;
+    left: 64%;
+    scale: 130%;
+}
+
+/* card-0 */
+.card-0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 255px;
+    width: 300px;
+    background: white;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    font-family: 'Marvel', sans-serif;
+    font-weight: bold;
+}
+
+.card-0 .cardContent {
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 10px;
+    color: white;
+}
+
+.card-0 .cardHeading {
+    font-size: 2.2rem;
+    color: black;
+}
+
+.card-0 .hours {
+    margin-top: 15px;
+    width: 235px;
+    font-size: 18px;
+    color: black;
+    list-style-type: none;
+
+}
+
+.card-0 .cardBtn {
+    margin-top: 15px;
+    padding: 0.2rem 1rem;
+    border: 2px solid #6f7a85;
+    transition: 0.4s;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    color: #6f7a85;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-0 .cardBtn:hover {
+    /* background: #6f7a85; */
+    background: black;
+    box-shadow: 0 0 5px teal,
+        0 0 15px teal,
+        0 0 30px teal,
+        0 0 60px teal;
+    color: white;
+    border-style: none;
+}
+
+.card-0 .cardBtn {
+    opacity: 1;
+}
+
+/* end hero cards */
+
+/* salon logo */
+h2 {
+    position: relative;
+    top: 25%;
+    left: -39%;
+}
+
+.staff {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-top: 825px;
+    margin-left: 400px;
+}
+
+
+#pMeet {
+    font-size: 25px;
+    font-family: 'Marvel', sans-serif;
+}
+
+#pNames {
+    display: flex;
+    justify-content: center;
+    font-family: 'Marvel', sans-serif;
+    font-size: 18px;
+}
+
+#workers img {
+    display: flex;
+    width: 125px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-top: 990px;
+    margin-left: 100px;
+}
+
+#icons img {
+    height: 75px;
+    padding: 15px;
+}
+
+.social .iconBtn {
+    border-style: none;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 20px;
+}
+
+.social .iconBtn:nth-child(1):hover {
+    background: rgb(255, 255, 0);
+    box-shadow: 0 0 5px yellow,
+        0 0 15px yellow,
+        0 0 30px yellow,
+        0 0 60px yellow;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.social .iconBtn:nth-child(2):hover {
+    background: orange;
+    box-shadow: 0 0 5px orange,
+        0 0 15px orange,
+        0 0 30px orange,
+        0 0 60px orange;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.social .iconBtn:nth-child(3):hover {
+    background: #00f2ff;
+    box-shadow: 0 0 5px #00f2ff,
+        0 0 15px #00f2ff,
+        0 0 30px #00f2ff,
+        0 0 60px #00f2ff;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.social .iconBtn:nth-child(4):hover {
+    background: fuchsia;
+    box-shadow: 0 0 5px fuchsia,
+        0 0 15px fuchsia,
+        0 0 30px fuchsia,
+        0 0 60px fuchsia;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.footerSocial {
+    display: none;
+}
+
+.content {
+    background-image: url(/assets/logo/contentBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    grid-area: content;
+    display: flex;
+    flex-direction: row;
+    padding: 60px;
+    border-style: solid;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    margin-top: 10px;
+    font-family: 'Marvel', sans-serif;
+    font-weight: 80px;
+    font-size: 16px;
+}
+
+
+/* breakpoints */
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
+
+/* common breakpoints */
+/* For Mobile Devices – 320px — 480px
+iPads and Tablets – 481px — 768px
+Laptops and small screen – 769px — 1024px
+Large screens and Desktops – 1025px — 1200px
+TV and Extra Large Screens – 1201px and more */
+
+/* Some common CSS breakpoints in 2022 that you can use include –
+
+Mobile – 360 x 640; 375 x 667; 360 x 720
+Tablet – 768 x 1024
+iPhone – 375 x 812
+Laptop – 1366 x 768
+Desktop or high-resolution laptop – 1920 x 1080 */
+
+/* Bootstrap – 576px, 768px, 992px, and 1200px */
+
+/* laptop */
+@media (max-width: 992px) {
+
+    .body .header {
+        display: flex;
+        background-size: contain;
+        background-position: -5x;
+        background-image: url("/assets/logo/headerbg2.jpg");
+
+    }
+
+    .hairlogo {
+        display: flex;
+        margin-left: 260px;
+    }
+
+    .name {
+        display: flex;
+        text-align: center;
+    }
+
+    .title1 {
+        display: flex;
+        font-size: 80px;
+    }
+
+    .title2 {
+        display: flex;
+        font-size: 40px;
+        padding-right: 38px;
+        padding-top: 35px;
+    }
+
+    .content {
+        display: flex;
+    }
+
+    .card-1 {
+        display: flex;
+        margin: 20px;
+    }
+
+    .card-1 img {
+        display: flex;
+        position: absolute;
+        top: -15%;
+        left: 26%;
+        transition: 0.4s;
+    }
+
+    .card-1:hover img {
+        display: flex;
+        top: -25%;
+        left: 42%;
+        scale: 120%;
+    }
+
+    .card-2 img {
+        display: flex;
+        top: -30%;
+        left: 39%;
+        transition: 0.4s;
+    }
+
+    .card-2:hover img {
+        display: flex;
+        top: -40%;
+        left: 35%;
+        scale: 120%;
+    }
+
+    .staff {
+        display: flex;
+        margin-left: 300px;
+    }
+
+    #pMeet {
+        display: flex;
+        font-size: 18px;
+    }
+
+    #pNames {
+        display: flex;
+        font-size: 15px;
+    }
+
+    #workers img {
+        display: flex;
+        width: 115px;
+    }
+
+    .social {
+        display: flex;
+        margin-left: 25px;
+    }
+
+    #icons img {
+        display: flex;
+        height: 55px;
+        padding: 10px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        background-image: url("/assets/logo/headerbg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #horizontal {
+        display: none;
+    }
+
+    #main {
+        display: flex;
+    }
+
+    .hairlogo {
+        display: none;
+    }
+
+    .name {
+        display: flex;
+        justify-content: center;
+    }
+
+    .title1 {
+        display: flex;
+        height: 100px;
+        font-family: 'Rubik Wet Paint', cursive;
+        font-size: 95px;
+    }
+
+    .title2 {
+        display: flex;
+        padding-top: 45px;
+        padding-right: 165px;
+        font-size: 55px;
+        font-weight: bold;
+    }
+
+    .content {
+        grid-area: content;
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+        /* justify-self: center; */
+        justify-content: center;
+
+    }
+
+    .hidden1 {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 355px;
+        width: 100%;
+        background: #fff;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-top: 20px;
+        font-family: 'Marvel', sans-serif;
+        font-weight: bold;
+    }
+
+    .hidden1 .hidden1Content {
+        margin: 5px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-left: 10px;
+    }
+
+    .hidden1 .hidden1Heading {
+        font-size: 35px;
+        color: black;
+    }
+
+    .hidden1 .hidden1Para {
+        margin-top: 15px;
+        width: 235px;
+        font-size: 18px;
+        color: black;
+        list-style-type: none;
+    }
+
+    .hidden1 .hidden1Btn {
+        margin-top: 15px;
+        padding: 0.2rem 1rem;
+        border: 2px solid #6f7a85;
+        transition: 0.4s;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        color: #6f7a85;
+        font-size: 1.2rem;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: 500;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .hidden1 .hidden1Btn:hover {
+        background: black;
+        box-shadow: 0 0 5px fuchsia,
+            0 0 15px fuchsia,
+            0 0 30px fuchsia,
+            0 0 60px fuchsia;
+        color: white;
+        border-style: none;
+    }
+
+    .hidden1Girl {
+        display: flex;
+        margin-left: 130px;
+    }
+
+    .hidden1Heading {
+        display: flex;
+    }
+
+
+    .hidden2 {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 355px;
+        width: 100%;
+        background: #fff;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-top: 20px;
+        margin-bottom: 260px;
+        font-family: 'Marvel', sans-serif;
+        font-weight: bold;
+    }
+
+    .hidden2 .hidden2Content {
+        margin: 5px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-left: 10px;
+    }
+
+    .hidden2 .hidden2Heading {
+        font-size: 35px;
+        color: black;
+    }
+
+    .hidden2 .hidden2Para {
+        margin-top: 15px;
+        width: 235px;
+        font-size: 18px;
+        color: black;
+        list-style-type: none;
+    }
+
+    .hidden2 .hidden2Btn {
+        margin-top: 15px;
+        padding: 0.2rem 1rem;
+        border: 2px solid #6f7a85;
+        transition: 0.4s;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        color: #6f7a85;
+        font-size: 1.2rem;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: 500;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .hidden2 .hidden2Btn:hover {
+        background: black;
+        box-shadow: 0 0 5px yellow,
+            0 0 15px yellow,
+            0 0 30px yellow,
+            0 0 60px yellow;
+        color: white;
+        border-style: none;
+    }
+
+    .hidden2Girl {
+        display: flex;
+        margin-left: 145px;
+    }
+
+    .hidden2Heading {
+        display: flex;
+    }
+
+    .card-1 {
+        display: none;
+    }
+
+    .card-1 img {
+        display: none;
+    }
+
+    .card-2 {
+        display: none;
+    }
+
+    .card-2 img {
+        display: none;
+    }
+
+    .card-0 {
+        display: flex;
+        width: 100%;
+
+    }
+
+    .staff {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2000px;
+        padding-right: 300px;
+
+    }
+
+    .social {
+        display: none;
+    }
+
+    #icons {
+        display: none;
+    }
+
+    .footerSocial {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    #footIcons img {
+        display: flex;
+        height: 60px;
+        padding: 15px;
+    }
+
+    .footerSocial .footerIconBtn {
+        display: flex;
+        border-style: none;
+        border-radius: 50px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-left: 20px;
+    }
+
+    .footerSocial .footerIconBtn:nth-child(1):hover {
+        display: flex;
+        background: rgb(255, 255, 0);
+        box-shadow: 0 0 5px yellow,
+            0 0 15px yellow,
+            0 0 30px yellow,
+            0 0 60px yellow;
+        transition: 0.5s;
+        transition-delay: 0s;
+    }
+
+    .footerSocial .footerIconBtn:nth-child(2):hover {
+        display: flex;
+        background: orange;
+        box-shadow: 0 0 5px orange,
+            0 0 15px orange,
+            0 0 30px orange,
+            0 0 60px orange;
+        transition: 0.5s;
+        transition-delay: 0s;
+    }
+
+    .footerSocial .footerIconBtn:nth-child(3):hover {
+        display: flex;
+        background: #00f2ff;
+        box-shadow: 0 0 5px #00f2ff,
+            0 0 15px #00f2ff,
+            0 0 30px #00f2ff,
+            0 0 60px #00f2ff;
+        transition: 0.5s;
+        transition-delay: 0s;
+    }
+
+    .footerSocial .footerIconBtn:nth-child(4):hover {
+        display: flex;
+        background: fuchsia;
+        box-shadow: 0 0 5px fuchsia,
+            0 0 15px fuchsia,
+            0 0 30px fuchsia,
+            0 0 60px fuchsia;
+        transition: 0.5s;
+        transition-delay: 0s;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+    }
+}
+
+/* phone */
+@media (max-width: 576px) {
+    .header {
+        display: flex;
+        background-position: 25%;
+        background-image: url("/assets/logo/headerbg.jpg");
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    #horizontal {
+        display: none;
+    }
+
+    #main {
+        display: flex;
+    }
+
+    .hairlogo {
+        display: none;
+    }
+
+    .name {
+        display: flex;
+        justify-content: center;
+    }
+
+    .title1 {
+        display: flex;
+        height: 100px;
+        font-family: 'Rubik Wet Paint', cursive;
+        font-size: 60px;
+    }
+
+    .title2 {
+        display: flex;
+        padding-top: 15px;
+        padding-right: 40px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .content {
+        grid-area: content;
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+        /* justify-self: center; */
+        justify-content: center;
+
+    }
+
+    .hidden1 {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 355px;
+        width: 100%;
+        background: #fff;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-top: 20px;
+        font-family: 'Marvel', sans-serif;
+        font-weight: bold;
+    }
+
+    .hidden1 .hidden1Content {
+        margin: 5px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-left: 10px;
+    }
+
+    .hidden1 .hidden1Heading {
+        font-size: 35px;
+        color: black;
+    }
+
+    .hidden1 .hidden1Para {
+        margin-top: 15px;
+        width: 235px;
+        font-size: 18px;
+        color: black;
+        list-style-type: none;
+    }
+
+    .hidden1 .hidden1Btn {
+        margin-top: 15px;
+        padding: 0.2rem 1rem;
+        border: 2px solid #6f7a85;
+        transition: 0.4s;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        color: #6f7a85;
+        font-size: 1.2rem;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: 500;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .hidden1 .hidden1Btn:hover {
+        background: black;
+        box-shadow: 0 0 5px fuchsia,
+            0 0 15px fuchsia,
+            0 0 30px fuchsia,
+            0 0 60px fuchsia;
+        color: white;
+        border-style: none;
+    }
+
+    .hidden1Girl {
+        display: none;
+    }
+
+    .hidden1Heading {
+        display: flex;
+    }
+
+
+    .hidden2 {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 355px;
+        width: 100%;
+        background: #fff;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-top: 20px;
+        margin-bottom: 260px;
+        font-family: 'Marvel', sans-serif;
+        font-weight: bold;
+    }
+
+    .hidden2 .hidden2Content {
+        margin: 5px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-left: 10px;
+    }
+
+    .hidden2 .hidden2Heading {
+        font-size: 35px;
+        color: black;
+    }
+
+    .hidden2 .hidden2Para {
+        margin-top: 15px;
+        width: 235px;
+        font-size: 18px;
+        color: black;
+        list-style-type: none;
+    }
+
+    .hidden2 .hidden2Btn {
+        margin-top: 15px;
+        padding: 0.2rem 1rem;
+        border: 2px solid #6f7a85;
+        transition: 0.4s;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        color: #6f7a85;
+        font-size: 1.2rem;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: 500;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .hidden2 .hidden2Btn:hover {
+        background: black;
+        box-shadow: 0 0 5px yellow,
+            0 0 15px yellow,
+            0 0 30px yellow,
+            0 0 60px yellow;
+        color: white;
+        border-style: none;
+    }
+
+    .hidden2Girl {
+        display: none;
+    }
+
+    .hidden2Heading {
+        display: flex;
+    }
+
+    .card-1 {
+        display: none;
+    }
+
+    .card-1 img {
+        display: none;
+    }
+
+    .card-2 {
+        display: none;
+    }
+
+    .card-2 img {
+        display: none;
+    }
+
+    .card-0 {
+        display: flex;
+
+    }
+
+    .staff {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2000px;
+        padding-right: 300px;
+    }
+
+    .social {
+        display: none;
+    }
+
+    #pMeet {
+        display: flex;
+        font-size: 15px;
+    }
+
+    #workers img {
+        display: flex;
+        width: 50px;
+    }
+
+    #icons {
+        display: none;
+    }
+
+    .footerSocial {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    #footIcons img {
+        display: flex;
+        height: 50px;
+        padding: 15px;
+    }
+
+    .footerSocial .footerIconBtn {
+        display: flex;
+        border-style: none;
+        border-radius: 50px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-left: 20px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        font-size: 12px;
+        margin: 2px;
+        padding: 2px;
+
+    }
+}
