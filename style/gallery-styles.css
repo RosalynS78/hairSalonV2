@@ -418,6 +418,70 @@ h2 {
   100% { flex: 10; }
 }
 
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    list-style: none;
+    margin-top: 15px;
+
+  
+}
+
+#icons img {
+    height: 50px;
+    padding: 10px;
+}
+
+.social .iconBtn {
+    border-style: none;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 20px;
+}
+
+.social .iconBtn:nth-child(1):hover {
+    background: rgb(255, 255, 0);
+    box-shadow: 0 0 5px yellow,
+        0 0 15px yellow,
+        0 0 30px yellow,
+        0 0 60px yellow;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.social .iconBtn:nth-child(2):hover {
+    background: orange;
+    box-shadow: 0 0 5px orange,
+        0 0 15px orange,
+        0 0 30px orange,
+        0 0 60px orange;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.social .iconBtn:nth-child(3):hover {
+    background: #00f2ff;
+    box-shadow: 0 0 5px #00f2ff,
+        0 0 15px #00f2ff,
+        0 0 30px #00f2ff,
+        0 0 60px #00f2ff;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.social .iconBtn:nth-child(4):hover {
+    background: fuchsia;
+    box-shadow: 0 0 5px fuchsia,
+        0 0 15px fuchsia,
+        0 0 30px fuchsia,
+        0 0 60px fuchsia;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+
+
 
 /* laptop */
 @media (max-width: 992px) {
