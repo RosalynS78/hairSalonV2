@@ -327,19 +327,18 @@ h2 {
   width: 15vw;
   height: 75vh;
   background-position: center;
-  background-size: 1vh;
   flex-direction: row;
   gap: 1rem;
-  margin: 1vw;
+  /* margin: 1vw; */
   border-radius: 3vw;
-  margin: 45px auto;
-  max-width: 100%;
-  width: 80rem;
+  /* margin: 45px auto;
+  max-width: 100%; */
+  width: 72rem;
   cursor: pointer;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
-
+  }
 
 .card-radio {
   display: none;
@@ -347,8 +346,8 @@ h2 {
 
 .card-content {
   background: #FFF
-    url('/assets/gallery/1-1.jpg')
-    50% / cover no-repeat;
+    url('/assets/gallery/1-1.avif')
+    40% / cover no-repeat;
   border-radius: 0.25rem;
   cursor: pointer;
   flex: 1;
@@ -358,19 +357,20 @@ h2 {
 }
 
 .card-content:nth-of-type(2) {
-  background-image: url('/assets/gallery/2-2.jpg');
+  background-image: url('/assets/gallery/2-2.avif');
+  
 }
 
 .card-content:nth-of-type(3) {
-  background-image: url('/assets/gallery/6-6.jpg');
+  background-image: url('/assets/gallery/3-3.avif');
 }
 
 .card-content:nth-of-type(4) {
-  background-image: url('/assets/gallery/7-7.jpg');
+  background-image: url('/assets/gallery/4-4.avif');
 }
 
 .card-content:last-of-type {
-  background-image: url('/assets/gallery/12-12.jpg');
+  background-image: url('/assets/gallery/5-5.avif');
 }
 
 .card-title {
@@ -398,7 +398,7 @@ h2 {
 .card-radio:checked + .card-content {
   animation: elastic 500ms cubic-bezier(0.64, 0.57, 0.67, 1.53) forwards;
   border-radius: 0;
-  box-shadow: 5px 5px 6px rgb(0 0 0 / 25%);
+  box-shadow: 5px 5px 6px rgb(0 0 0 / 15%);
   flex: 10;
 }
 
@@ -418,40 +418,6 @@ h2 {
   100% { flex: 10; }
 }
 
-
-/* breakpoints */
-
-/* Extra small devices (phones, 600px and down) */
-/* @media only screen and (max-width: 600px) {...} */
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {...} */
-
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {...} */
-
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {...} */
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {...} */
-
-/* common breakpoints */
-/* For Mobile Devices – 320px — 480px
-iPads and Tablets – 481px — 768px
-Laptops and small screen – 769px — 1024px
-Large screens and Desktops – 1025px — 1200px
-TV and Extra Large Screens – 1201px and more */
-
-/* Some common CSS breakpoints in 2022 that you can use include –
-
-Mobile – 360 x 640; 375 x 667; 360 x 720
-Tablet – 768 x 1024
-iPhone – 375 x 812
-Laptop – 1366 x 768
-Desktop or high-resolution laptop – 1920 x 1080 */
-
-/* Bootstrap – 576px, 768px, 992px, and 1200px */
 
 /* laptop */
 @media (max-width: 992px) {
