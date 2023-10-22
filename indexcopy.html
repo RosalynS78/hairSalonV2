@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="/style/index-stylescopy.css">
+  <link rel="stylesheet" href="/style/about-styles.css">
+  <link rel="stylesheet" href="/style/gallery-stylescopy.css">
+
+  <!-- javascript -->
+  <script src="index.js"></script>
+
+  <!-- rubik font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+  <!-- marvel font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@700&display=swap" rel="stylesheet">
+
+  <title>L&L Home</title>
+</head>
+
+<div class="container">
+
+  <!-- headerMenu -->
+  <div class="headerMenu">
+
+    <!-- logo title  -->
+    <div class="name">
+      <div class="hairlogo"> <img src="/assets/logo/logo.png" height="250px">
+      </div>
+      <div class="title1">Locks & Loaded</div>
+    </div>
+    <div class="title2">salon</div>
+
+    <!-- main menu -->
+    <div class="containerMenu" id="horizontal">
+      <div class="btn"><a href="#sectionHome">HOME</a></div>
+      <div class="btn"><a href="#sectionAbout">ABOUT</a></div>
+      <div class="btn"><a href="#sectionGallery">GALLERY</a></div>
+      <div class="btn"><a href="#sectionContact">CONTACT</a></div>
+    </div>
+
+    <!-- burger menu -->
+    <div class="menu">
+      <div id="main">
+        <!-- open menu -->
+        <span style="font-size: 25px; cursor:pointer" onclick="openNav()"> &#9776;</span>
+      </div>
+      <!-- burger menu -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a style="--clr:#ffff00" data-text="home" href="#sectionHome"> Home </a>
+        <a style="--clr:#ffa500" data-text="about" href="#sectionAbout">About</a> About </a>
+        <a style="--clr:#ffc0cb" data-text="gallery" href="#sectionGallery">Gallery</a> Gallery </a>
+        <a style="--clr:#8812a5" data-text="contact" href="#sectionContact">Contact</a> Contact </a>
+      </div>
+    </div>
+
+    <!-- home section -->
+    <section id="sectionHome">
+      <div class="home">
+
+        <!-- card3 -->
+        <div class="card-0">
+          <div class="cardContent">
+            <h1 class="cardHeading">Hours</h1>
+            <ul class="hours">
+              <li><b>Monday - Friday: 10 AM - 5 PM</b></li><br>
+              <li><b>Saturday: By Appointments Only</b></li><br>
+              <li><b>Sunday: Closed</b></li><br>
+            </ul>
+            <a href="#" class="cardBtn">Location</a>
+
+          </div>
+          <!-- description -->
+          <div class="description">We're not your average Salon</div>
+          <!-- social icons -->
+          <div class="social" id="icons">
+            <div class="iconBtn"><a href="#"><img src="/assets/social/fb.png"></a></div>
+            <div class="iconBtn"><a href="#"><img src="/assets/social/insta.png"></a></div>
+            <div class="iconBtn"><a href="#"><img src="/assets/social/twit.png"></a></div>
+            <div class="iconBtn"><a href="#"><img src="/assets/social/ytube.png"></a></div>
+          </div>
+        </div>
+
+
+        <!-- hero cards -->
+        <div class="card-1">
+          <div class="cardContent">
+            <h1 class="cardHeading">Services</h1>
+            <ul class="para">
+              <li><b>Cut/Style</b></li><br>
+              <li><b>Women's Cut</b></li><br>
+              <li><b>Men's Cut</b></li><br>
+              <li><b>Children's Cut</b></li><br>
+              <li><b>Special Events/Updos</b></li><br>
+            </ul>
+            <a href="/book.html" class="cardBtn">Book Appointment</a>
+          </div>
+          <img src="/assets/heroCards/girl1.png" alt="silhouette" style="height: 350px; width: 350px;">
+        </div>
+
+        <!-- hidden 1 -->
+        <div class="hidden1">
+          <div class="hidden1Content">
+            <h1 class="hidden1Heading">Services</h1>
+            <ul class="hidden1Para">
+              <li><b>Cut/Style</b></li><br>
+              <li><b>Women's Cut</b></li><br>
+              <li><b>Men's Cut</b></li><br>
+              <li><b>Children's Cut</b></li><br>
+              <li><b>Special Events/Updos</b></li><br>
+            </ul>
+            <a href="/book.html" class="hidden1Btn">Book Appointment</a>
+          </div>
+          <img class="hidden1Girl" src="/assets/heroCards/girl1.png" alt="silhouette"
+            style="height: 350px; width: 350px;">
+        </div>
+
+        <!-- card2  -->
+        <div class="card-2">
+          <div class="cardContent">
+            <h1 class="cardHeading">Other Services</h1>
+            <ul class="para">
+              <li><b>Color</b></li><br>
+              <li><b>Highlights</b></li><br>
+              <li><b>Balayage</b></li><br>
+              <li><b>Perms</b></li><br>
+              <li><b>Relaxers</b></li><br>
+            </ul>
+            <a href="#" class="cardBtn">Book Appointment</a>
+          </div>
+          <img src="/assets/heroCards/girl2.png" alt="silhouette" style="height: 350px; width: 350px;">
+        </div>
+
+        <!-- hidden 2 -->
+        <!--card2  -->
+        <div class="hidden2">
+          <div class="hidden2Content">
+
+            <h1 class="hidden2Heading">Other Services</h1>
+            <ul class="hidden2Para">
+              <li><b>Color</b></li><br>
+              <li><b>Highlights</b></li><br>
+              <li><b>Balayage</b></li><br>
+              <li><b>Perms</b></li><br>
+              <li><b>Relaxers</b></li><br>
+            </ul>
+            <a href="#" class="hidden2Btn">Book Appointment</a>
+          </div>
+          <img class="hidden2Girl" src="/assets/heroCards/girl2.png" alt="silhouette"
+            style="height: 350px; width: 350px;">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section id="sectionAbout">
+      <div class="about">
+        <div class="staff" id="workers">
+          <p id="pMeet">Meet the Staff</p>
+          <img src="/assets/staff/staff1.png">
+          <p id="pNames">Barbie Barber</p><br>
+
+          <img src="/assets/staff/staff2.png">
+          <p id="pNames">Sally Salon</p><br>
+          <img src="/assets/staff/staff3.png">
+          <p id="pNames">Harry Hairstylist</p><br>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- gallery section -->
+    <section id="sectionGallery">
+      <div class="gallery">
+
+        <!-- elastic accordion 2 -->
+        <main class="main">
+          <input class="card-radio" type="radio" name="card" id="card-1" />
+          <label class="card-content" for="card-1">
+            <h2 class="card-title">Sexy</h2>
+          </label>
+          <input class="card-radio" type="radio" name="card" id="card-2" />
+          <label class="card-content" for="card-2">
+            <h2 class="card-title">Bold</h2>
+          </label>
+          <input class="card-radio" type="radio" name="card" id="card-3" />
+          <label class="card-content" for="card-3">
+            <h2 class="card-title">Different</h2>
+          </label>
+          <input class="card-radio" type="radio" name="card" id="card-4" />
+          <label class="card-content" for="card-4">
+            <h2 class="card-title">Unique</h2>
+          </label>
+          <input class="card-radio" type="radio" name="card" id="card-5" />
+          <label class="card-content" for="card-5">
+            <h2 class="card-title">Playful</h2>
+          </label>
+        </main>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <div class="contact"></div>
+
+
+
+
+
+
+    </section>
+
+
+    </body>
+
+</html>

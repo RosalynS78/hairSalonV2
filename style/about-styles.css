@@ -1,0 +1,67 @@
+.container {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "headerMenu"
+      "home"
+      "about"
+      "gallery"
+      "contact";
+  }
+  
+  .headerMenu { grid-area: headerMenu; }
+  
+  .home { grid-area: home; }
+  
+  .about { grid-area: about; }
+  
+  .gallery { grid-area: gallery; }
+  
+  .contact { grid-area: contact; }
+
+
+.about {
+    display: flex;
+    grid-area: about;
+    padding: 50px;
+}
+
+#sectionAbout {
+    background-image: url(/assets/logo/contentBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    margin-top: 115px;
+}
+
+/* staff avatars */
+.staff {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+ 
+}
+
+
+#pMeet {
+    font-size: 25px;
+    font-family: 'Marvel', sans-serif;
+}
+
+#pNames {
+    display: flex;
+    justify-content: center;
+    font-family: 'Marvel', sans-serif;
+    font-size: 18px;
+}
+
+#workers img {
+    display: flex;
+    width: 125px;
+}
+
