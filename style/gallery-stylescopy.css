@@ -43,7 +43,7 @@
  .main {
     display: flex;
     width: 15vw;
-    height: 75vh;
+    height: 65vh;
     background-position: center;
     flex-direction: row;
     gap: 1rem;
