@@ -26,3 +26,23 @@ $(function() {
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
   });
 });
+
+/*show staff info function*/
+function showHH() {
+  document.getElementById('harry-info').style.display = "block";
+  document.getElementById('sally-info').style.display = "none";
+  document.getElementById('barbie-info').style.display = "none";
+
+}
+
+function showSS() {
+  document.getElementById('sally-info').style.display = "block";
+  document.getElementById('harry-info').style.display = "none";
+  document.getElementById('barbie-info').style.display = "none";
+}
+
+function showBB() {
+  document.getElementById('barbie-info').style.display = "block";
+  document.getElementById('harry-info').style.display = "none";
+  document.getElementById('sally-info').style.display = "none";
+}

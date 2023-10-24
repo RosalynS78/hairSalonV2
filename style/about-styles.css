@@ -121,3 +121,16 @@
     box-sizing: border-box;
   }
 
+  /* show/hide info */
+  #harry-info {
+    display: none;
+  }
+
+  #sally-info {
+    display: none;
+  }
+
+  #barbie-info {
+    display: none;
+  }
+
