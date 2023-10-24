@@ -4,10 +4,10 @@
 
 -main focus CSS
 
--responsive 
+-responsive
 
 -difference between v1 and v2
 
-one page design “one page scrolling” or “parallax” website
+one page design “one page scrolling”website
 
 working book appointment form
