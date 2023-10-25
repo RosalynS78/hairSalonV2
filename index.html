@@ -7,9 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- stylesheet -->
   <link rel="stylesheet" href="/style/index-styles.css">
-  <link rel="stylesheet" href="/style/about-styles.css">
-  <link rel="stylesheet" href="/style/gallery-styles.css">
-  <link rel="stylesheet" href="/style/contact-styles.css">
 
   <!-- javascript -->
   <script src="index.js"></script>
@@ -27,243 +24,247 @@
 </head>
 
 <body>
-<div class="container">
+  <div class="container">
 
-  <!-- headerMenu -->
-  <div class="headerMenu" id="menuHead">
+    <!-- headerMenu -->
+    <div class="headerMenu" id="menuHead">
 
-    <!-- logo title  -->
-    <div class="name">
-      <div class="hairlogo"> <img src="/assets/logo/logo.png" height="250px">
+      <!-- logo title  -->
+      <div class="name">
+        <div class="hairlogo"> <img src="/assets/logo/logo.png" height="250px">
+        </div>
+        <div class="title1">Locks & Loaded</div>
       </div>
-      <div class="title1">Locks & Loaded</div>
-    </div>
-    <div class="title2">salon</div>
+      <div class="title2">salon</div>
 
-    <!-- main menu -->
-    <div class="containerMenu" id="horizontal">
-      <div class="btn"><a href="#sectionHome">HOME</a></div>
-      <div class="btn"><a href="#sectionAbout">ABOUT</a></div>
-      <div class="btn"><a href="#sectionGallery">GALLERY</a></div>
-      <div class="btn"><a href="#sectionContact">CONTACT</a></div>
-    </div>
-
-    <!-- burger menu -->
-    <div class="menu">
-      <div id="main">
-        <!-- open menu -->
-        <span style="font-size: 25px; cursor:pointer" onclick="openNav()"> &#9776;</span>
+      <!-- main menu -->
+      <div class="containerMenu" id="horizontal">
+        <div class="btn"><a href="#sectionHome">HOME</a></div>
+        <div class="btn"><a href="#sectionAbout">ABOUT</a></div>
+        <div class="btn"><a href="#sectionGallery">GALLERY</a></div>
+        <div class="btn"><a href="#sectionContact">CONTACT</a></div>
       </div>
+
       <!-- burger menu -->
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a style="--clr:#ffff00" data-text="home" href="#sectionHome"> Home </a>
-        <a style="--clr:#ffa500" data-text="about" href="#sectionAbout">About</a> About </a>
-        <a style="--clr:#ffc0cb" data-text="gallery" href="#sectionGallery">Gallery</a> Gallery </a>
-        <a style="--clr:#8812a5" data-text="contact" href="#sectionContact">Contact</a> Contact </a>
+      <div class="menu">
+        <div id="main">
+          <!-- open menu -->
+          <span style="font-size: 25px; cursor:pointer" onclick="openNav()"> &#9776;</span>
+        </div>
+        <!-- burger menu -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a style="--clr:#ffff00" data-text="home" href="#sectionHome"> Home </a>
+          <a style="--clr:#ffa500" data-text="about" href="#sectionAbout">About</a> About </a>
+          <a style="--clr:#ffc0cb" data-text="gallery" href="#sectionGallery">Gallery</a> Gallery </a>
+          <a style="--clr:#8812a5" data-text="contact" href="#sectionContact">Contact</a> Contact </a>
+        </div>
       </div>
-    </div>
 
-    <!-- home section -->
-    <section id="sectionHome">
-      <div class="home">
+      <!-- home section -->
+      <section id="sectionHome">
+        <div class="home">
 
-        <!-- card3 -->
-        <div class="card-0">
-          <div class="cardContent">
-            <h1 class="cardHeading">Hours</h1>
-            <ul class="hours">
-              <li><b>Monday - Friday: 10 AM - 5 PM</b></li><br>
-              <li><b>Saturday: By Appointments Only</b></li><br>
-              <li><b>Sunday: Closed</b></li><br>
-            </ul>
-            <a href="#" class="cardBtn">Location</a>
+          <!-- card3 -->
+          <div class="card-0">
+            <div class="cardContent">
+              <h1 class="cardHeading">Hours</h1>
+              <ul class="hours">
+                <li><b>Monday - Friday: 10 AM - 5 PM</b></li><br>
+                <li><b>Saturday: By Appointments Only</b></li><br>
+                <li><b>Sunday: Closed</b></li><br>
+              </ul>
+              <a href="#" class="cardBtn">Location</a>
 
+            </div>
+            <!-- description -->
+            <div class="description">We're not your average Salon</div>
+            <!-- social icons -->
+            <div class="social" id="icons">
+              <div class="iconBtn"><a href="#"><img src="/assets/social/fb.png"></a></div>
+              <div class="iconBtn"><a href="#"><img src="/assets/social/insta.png"></a></div>
+              <div class="iconBtn"><a href="#"><img src="/assets/social/twit.png"></a></div>
+              <div class="iconBtn"><a href="#"><img src="/assets/social/ytube.png"></a></div>
+            </div>
           </div>
-          <!-- description -->
-          <div class="description">We're not your average Salon</div>
-          <!-- social icons -->
-          <div class="social" id="icons">
-            <div class="iconBtn"><a href="#"><img src="/assets/social/fb.png"></a></div>
-            <div class="iconBtn"><a href="#"><img src="/assets/social/insta.png"></a></div>
-            <div class="iconBtn"><a href="#"><img src="/assets/social/twit.png"></a></div>
-            <div class="iconBtn"><a href="#"><img src="/assets/social/ytube.png"></a></div>
+
+          <!-- hero cards -->
+          <div class="card-1">
+            <div class="cardContent">
+              <h1 class="cardHeading">Services</h1>
+              <ul class="para">
+                <li><b>Cut/Style</b></li><br>
+                <li><b>Women's Cut</b></li><br>
+                <li><b>Men's Cut</b></li><br>
+                <li><b>Children's Cut</b></li><br>
+                <li><b>Special Events/Updos</b></li><br>
+              </ul>
+              <a href="/book.html" class="cardBtn">Book Appointment</a>
+            </div>
+            <img src="/assets/heroCards/girl1.png" alt="silhouette" style="height: 350px; width: 350px;">
+          </div>
+
+          <!-- hidden 1 -->
+          <div class="hidden1">
+            <div class="hidden1Content">
+              <h1 class="hidden1Heading">Services</h1>
+              <ul class="hidden1Para">
+                <li><b>Cut/Style</b></li><br>
+                <li><b>Women's Cut</b></li><br>
+                <li><b>Men's Cut</b></li><br>
+                <li><b>Children's Cut</b></li><br>
+                <li><b>Special Events/Updos</b></li><br>
+              </ul>
+              <a href="/book.html" class="hidden1Btn">Book Appointment</a>
+            </div>
+            <img class="hidden1Girl" src="/assets/heroCards/girl1.png" alt="silhouette"
+              style="height: 350px; width: 350px;">
+          </div>
+
+          <!-- card2  -->
+          <div class="card-2">
+            <div class="cardContent">
+              <h1 class="cardHeading">Other Services</h1>
+              <ul class="para">
+                <li><b>Color</b></li><br>
+                <li><b>Highlights</b></li><br>
+                <li><b>Balayage</b></li><br>
+                <li><b>Perms</b></li><br>
+                <li><b>Relaxers</b></li><br>
+              </ul>
+              <a href="#" class="cardBtn">Book Appointment</a>
+            </div>
+            <img src="/assets/heroCards/girl2.png" alt="silhouette" style="height: 350px; width: 350px;">
+          </div>
+
+          <!-- hidden 2 -->
+          <!--card2  -->
+          <div class="hidden2">
+            <div class="hidden2Content">
+
+              <h1 class="hidden2Heading">Other Services</h1>
+              <ul class="hidden2Para">
+                <li><b>Color</b></li><br>
+                <li><b>Highlights</b></li><br>
+                <li><b>Balayage</b></li><br>
+                <li><b>Perms</b></li><br>
+                <li><b>Relaxers</b></li><br>
+              </ul>
+              <a href="#" class="hidden2Btn">Book Appointment</a>
+            </div>
+            <img class="hidden2Girl" src="/assets/heroCards/girl2.png" alt="silhouette"
+              style="height: 350px; width: 350px;">
           </div>
         </div>
+      </section>
 
+      <!-- scroll down section 1 -->
+      <section id="section01" class="demo">
+        <a href="#section01"><span></span></a>
+      </section>
 
-        <!-- hero cards -->
-        <div class="card-1">
-          <div class="cardContent">
-            <h1 class="cardHeading">Services</h1>
-            <ul class="para">
-              <li><b>Cut/Style</b></li><br>
-              <li><b>Women's Cut</b></li><br>
-              <li><b>Men's Cut</b></li><br>
-              <li><b>Children's Cut</b></li><br>
-              <li><b>Special Events/Updos</b></li><br>
-            </ul>
-            <a href="/book.html" class="cardBtn">Book Appointment</a>
+      <!-- about section -->
+      <section id="sectionAbout">
+        <div class="about">
+          <div class="staff" id="workers">
+            <p id="pMeet">Meet the Staff</p>
+
+            <img src="/assets/staff/staff1.png" alt="avatar">
+            <button onclick="showBB()" class="BB">
+              <p id="pNames">Barbie Barber</p>
+            </button><br>
+
+            <img src="/assets/staff/staff2.png" alt="avatar">
+            <button onclick="showSS()" class="SS">
+              <p id="pNames">Sally Salon</p>
+            </button><br>
+
+            <img src="/assets/staff/staff3.png" alt="avatar">
+            <button onclick="showHH()" class="HH">
+              <p id="pNames">Harry Hairstylist</p>
+            </button><br>
           </div>
-          <img src="/assets/heroCards/girl1.png" alt="silhouette" style="height: 350px; width: 350px;">
+
         </div>
 
-        <!-- hidden 1 -->
-        <div class="hidden1">
-          <div class="hidden1Content">
-            <h1 class="hidden1Heading">Services</h1>
-            <ul class="hidden1Para">
-              <li><b>Cut/Style</b></li><br>
-              <li><b>Women's Cut</b></li><br>
-              <li><b>Men's Cut</b></li><br>
-              <li><b>Children's Cut</b></li><br>
-              <li><b>Special Events/Updos</b></li><br>
-            </ul>
-            <a href="/book.html" class="hidden1Btn">Book Appointment</a>
-          </div>
-          <img class="hidden1Girl" src="/assets/heroCards/girl1.png" alt="silhouette"
-            style="height: 350px; width: 350px;">
-        </div>
-
-        <!-- card2  -->
-        <div class="card-2">
-          <div class="cardContent">
-            <h1 class="cardHeading">Other Services</h1>
-            <ul class="para">
-              <li><b>Color</b></li><br>
-              <li><b>Highlights</b></li><br>
-              <li><b>Balayage</b></li><br>
-              <li><b>Perms</b></li><br>
-              <li><b>Relaxers</b></li><br>
-            </ul>
-            <a href="#" class="cardBtn">Book Appointment</a>
-          </div>
-          <img src="/assets/heroCards/girl2.png" alt="silhouette" style="height: 350px; width: 350px;">
-        </div>
-
-        <!-- hidden 2 -->
-        <!--card2  -->
-        <div class="hidden2">
-          <div class="hidden2Content">
-
-            <h1 class="hidden2Heading">Other Services</h1>
-            <ul class="hidden2Para">
-              <li><b>Color</b></li><br>
-              <li><b>Highlights</b></li><br>
-              <li><b>Balayage</b></li><br>
-              <li><b>Perms</b></li><br>
-              <li><b>Relaxers</b></li><br>
-            </ul>
-            <a href="#" class="hidden2Btn">Book Appointment</a>
-          </div>
-          <img class="hidden2Girl" src="/assets/heroCards/girl2.png" alt="silhouette"
-            style="height: 350px; width: 350px;">
-        </div>
-
-      </div>
-    </section>
-
-    <!-- scroll down section 1 -->
-    <section id="section01" class="demo">
-      <a href="#section01"><span></span></a>
-    </section>
-
-    <!-- about section -->
-    <section id="sectionAbout">
-      <div class="about">
-        <div class="staff" id="workers">
-          <p id="pMeet">Meet the Staff</p>
-
-          <img src="/assets/staff/staff1.png" alt="avatar">
-          <button onclick="showBB()" class="BB"><p id="pNames">Barbie Barber</p></button><br>
-
-          <img src="/assets/staff/staff2.png" alt="avatar">
-          <button onclick="showSS()" class="SS"><p id="pNames">Sally Salon</p></button><br>
-
-          <img src="/assets/staff/staff3.png" alt="avatar">
-         <button onclick="showHH()" class="HH"><p id="pNames">Harry Hairstylist</p></button><br>
-        </div>
-
-      </div>
-      
         <!-- show/hide -->
         <div class="staff-card">
-          
-        <div class="staffies">
-          
-        <div id="harry-info" class="show-info">
-          This is harry's info.
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem reprehenderit amet voluptatum ut facere quae deserunt minima magnam asperiores commodi, vitae quam suscipit explicabo animi fugiat consequuntur vel temporibus rem?</p>
-          </div>
 
-          <div id="sally-info" class="show-info">
-            This is sally's info.
+          <div class="staffies">
+
+            <div id="harry-info" class="show-info">
+              This is harry's info.
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem reprehenderit amet voluptatum ut
+                facere quae deserunt minima magnam asperiores commodi, vitae quam suscipit explicabo animi fugiat
+                consequuntur vel temporibus rem?</p>
+            </div>
+
+            <div id="sally-info" class="show-info">
+              This is sally's info.
             </div>
 
             <div id="barbie-info" class="show-info">
               This is barbie's info.
-              </div>
-             
             </div>
-            <img src="/assets/heroCards/girl3.png" alt="silhouette" style="height: 420px" class="girlAbout">
-            </div>
-           
-          
-    </section>
 
-    <!-- scroll down section 2 -->
-    <section id="section02" class="demo">
-      <a href="#section02"><span></span></a>
-    </section>
+          </div>
+          <img src="/assets/heroCards/girl3.png" alt="silhouette" style="height: 420px" class="girlAbout">
+        </div>
+      </section>
 
-    <!-- gallery section -->
-    <section id="sectionGallery">
-      <div class="gallery">
-    
-        <!-- elastic accordion 2 -->
-        <main class="main">
-          <input class="card-radio" type="radio" name="card" id="card-1" />
-          <label class="card-content" for="card-1">
-            <h2 class="card-title">Sexy</h2>
-          </label>
-          <input class="card-radio" type="radio" name="card" id="card-2" />
-          <label class="card-content" for="card-2">
-            <h2 class="card-title">Bold</h2>
-          </label>
-          <input class="card-radio" type="radio" name="card" id="card-3" />
-          <label class="card-content" for="card-3">
-            <h2 class="card-title">Different</h2>
-          </label>
-          <input class="card-radio" type="radio" name="card" id="card-4" />
-          <label class="card-content" for="card-4">
-            <h2 class="card-title">Unique</h2>
-          </label>
-          <input class="card-radio" type="radio" name="card" id="card-5" />
-          <label class="card-content" for="card-5">
-            <h2 class="card-title">Playful</h2>
-          </label>
-        </main>
+      <!-- scroll down section 2 -->
+      <section id="section02" class="demo">
+        <a href="#section02"><span></span></a>
+      </section>
 
-      </div>
-    </section>
+      <!-- gallery section -->
+      <section id="sectionGallery">
+        <div class="gallery">
+
+          <!-- elastic accordion 2 -->
+          <main class="main">
+            <input class="card-radio" type="radio" name="card" id="card-1" />
+            <label class="card-content" for="card-1">
+              <h2 class="card-title">Sexy</h2>
+            </label>
+            <input class="card-radio" type="radio" name="card" id="card-2" />
+            <label class="card-content" for="card-2">
+              <h2 class="card-title">Bold</h2>
+            </label>
+            <input class="card-radio" type="radio" name="card" id="card-3" />
+            <label class="card-content" for="card-3">
+              <h2 class="card-title">Different</h2>
+            </label>
+            <input class="card-radio" type="radio" name="card" id="card-4" />
+            <label class="card-content" for="card-4">
+              <h2 class="card-title">Unique</h2>
+            </label>
+            <input class="card-radio" type="radio" name="card" id="card-5" />
+            <label class="card-content" for="card-5">
+              <h2 class="card-title">Playful</h2>
+            </label>
+          </main>
+
+        </div>
+      </section>
 
 
-    <!-- scroll down section 3 -->
-    <section id="section03" class="demo">
-      <a href="#menuHead"><span></span></a>
-    </section>
+      <!-- scroll down section 3 -->
+      <section id="section03" class="demo">
+        <a href="#menuHead"><span></span></a>
+      </section>
 
-    <!-- contact section -->
-    <!-- <section id="sectionContact">
+      <!-- contact section -->
+      <!-- <section id="sectionContact">
     <div class="contact">
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate asperiores ducimus ipsum, minus veniam voluptatibus rem laboriosam debitis deleniti unde corporis placeat repudiandae adipisci laudantium commodi quasi dolores maxime magni?</p>
     </div>
   </section> -->
 
 
-  <!-- footer -->
+      <!-- footer -->
 
-  <!-- <div class="footer">
+      <!-- <div class="footer">
     <div class="copy">© 2021 Locks and Loaded. All rights reseverd &#124; 806-XXX-XXXX &#124; XXXX St &#124; Lubbock, TX
       794XX <br>
       
@@ -278,8 +279,6 @@
 
   </div> -->
 
-
-
-    </body>
+</body>
 
 </html>
