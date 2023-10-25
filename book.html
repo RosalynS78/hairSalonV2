@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/style/book-styles.css">
+    <!-- javascript -->
+    <script src="index-js.js"></script>
+    <!-- rubik font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <!-- marvel font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@700&display=swap" rel="stylesheet">
+
+    <title>l&l Book</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="sideA">
+            <div class="checkboxStyle">
+                <form action="/check">
+                    <details>
+                        <summary id="cuts">
+                            Cuts
+                        </summary>
+                        <input type="checkbox" name="men">Men's Cut</input><br>
+                        <input type="checkbox" name="women">Women's Cut</input><br>
+                        <input type="checkbox" name="kid">Kid's Cut</input><br>
+                    </details>
+                    <br>
+                    <details>
+                        <summary id="style">
+                            Style
+                        </summary>
+                        <input type="checkbox" name="updos">Updo's</input><br>
+                        <input type="checkbox" name="curls">Curls</input><br>
+                        <input type="checkbox" name="straighten">Straighten</input><br>
+                        <input type="checkbox" name="events">Special Events</input><br>
+                    </details>
+                    <br>
+                    <details>
+                        <summary id="style">
+                            Other
+                        </summary>
+                        <input type="checkbox" name="color">Color</input><br>
+                        <input type="checkbox" name="highlights">Highlight's</input><br>
+
+                        <input type="checkbox" name="balayage">Balayage</input><br>
+                        <input type="checkbox" name="perm">Perms</input><br>
+                        <input type="checkbox" name="relaxers">Relaxers</input><br>
+                    </details>
+            </div>
+
+            <div class="info">
+                <br>
+                <p>
+                    <label for="fName"></label><br>
+                    <input type="text" name="fName" placeholder="First Name">
+                </p>
+                <p>
+                    <label for="lName"></label><br>
+                    <input type="text" name="lName" placeholder="Last Name">
+                </p>
+                <p>
+                    <label for="phone"></label><br>
+                    <input type="tel" name="phone" placeholder="Phone">
+                </p>
+                <p>
+                    <label for="email"></label><br>
+                    <input type="email" name="email" placeholder="Email">
+                </p>
+
+                <input type="datetime-local">
+                <input type="submit">
+                <input type="reset">
+                </form>
+                <br>
+            </div>
+        </div>
+
+        <div class="sideB">
+            <h2>Hours</h2>
+            <br>
+            <p>Monday - Friday: 10 AM - 5 PM</p>
+            <p>Saturday: By Appointments Only</p>
+            <p>Sunday: Close</p>
+            <button><a href="index.html">HOME</a></button>
+        </div>
+    </div>
+    <img src="/assets/heroCards/girl3.png" alt="silhouette" style="height: 620px" class="girlAbout">
+  </div>
+</html>
