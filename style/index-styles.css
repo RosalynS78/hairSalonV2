@@ -1,12 +1,7 @@
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    padding: 0;
+html body {
     display: flex;
     justify-content: center;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -56,30 +51,30 @@ body {
 .name {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding-top: 125px;
-    padding-left: 55px;
+    margin: 6% 0 0 4%;
 }
 
 .title1 {
     display: flex;
-    justify-items: center;
-    align-items: center;
-    height: 100px;
-    margin-top: 150px;
+    margin-top: 7%;
     font-family: 'Rubik Wet Paint', cursive;
-    font-size: 105px;
+    font-size: 7rem;
 }
 
 .title2 {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 10px;
-    font-size: 50px;
+
+    font-size: 4rem;
     font-weight: bold;
 }
 
 /* hairdryer animation */
+/* #blowDryer {
+    
+    margin: 55% 0 -35% 30%;
+ 
+} */
 .hairlogo {
     display: flex;
     margin-top: 130px;
@@ -375,6 +370,16 @@ body {
 }
 
 /* home */
+#girlHero {
+    height: 110%;
+    width: 110%;
+}
+
+#girlHero2 {
+    height: 110%;
+    width: 110%;
+}
+
 .home {
     display: flex;
     grid-area: content;
@@ -412,6 +417,7 @@ body {
 }
 
 /* hidden card 1 */
+
 .hidden1 {
     display: none;
 }
@@ -666,6 +672,7 @@ body {
 .card-0 .cardBtn {
     opacity: 1;
 }
+
 
 /* description */
 .description {
