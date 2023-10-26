@@ -50,7 +50,6 @@ html body {
 /* logo title */
 .name {
     display: flex;
-    flex-direction: row;
     margin: 6% 0 0 4%;
 }
 
