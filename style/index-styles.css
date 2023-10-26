@@ -55,6 +55,7 @@ html body {
 
 .title1 {
     display: flex;
+    justify-content: flex-end;
     margin-top: 7%;
     font-family: 'Rubik Wet Paint', cursive;
     font-size: 7rem;
@@ -63,7 +64,6 @@ html body {
 .title2 {
     display: flex;
     justify-content: flex-end;
-
     font-size: 4rem;
     font-weight: bold;
 }
