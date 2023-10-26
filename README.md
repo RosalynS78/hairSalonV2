@@ -12,10 +12,12 @@ one page design “one page scrolling”website
 
 working book appointment form
 
-goals 
+goals
 
 - practice shorthand css
 
 -better understanding of units
 
 -don't use inline styles
+
+-cleaner codes
