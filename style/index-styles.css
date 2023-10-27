@@ -51,35 +51,36 @@ html body {
 .name {
     display: flex;
     flex-direction: row;
-    margin: 6% 0 0 4%;
+    margin: 3% 0 0 4%;
 }
 
 .title1 {
     display: flex;
+    justify-content: center;
     margin-top: 7%;
     font-family: 'Rubik Wet Paint', cursive;
     font-size: 7rem;
+    margin-top: 12%;
 }
 
 .title2 {
     display: flex;
     justify-content: flex-end;
-
+    margin-bottom: 1%;
     font-size: 4rem;
     font-weight: bold;
 }
 
 /* hairdryer animation */
-/* #blowDryer {
-    
-    margin: 55% 0 -35% 30%;
+#blowDryer {
+    height: 220%;
+    margin: 95% 0 0% 30%;
+    padding: 5%;
  
-} */
+}
 .hairlogo {
     display: flex;
-    margin-top: 130px;
-    margin-left: 150px;
-    margin-right: 130px;
+    margin: 130px 130px 0 150px;
     height: 100px;
     width: 100px;
     transform: translateX(0px);
