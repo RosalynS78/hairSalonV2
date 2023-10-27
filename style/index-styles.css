@@ -52,11 +52,13 @@ html body {
     display: flex;
     flex-direction: row;
     margin: 3% 0 0 4%;
+    margin: 6% 0 0 4%;
 }
 
 .title1 {
     display: flex;
     justify-content: center;
+    justify-content: flex-end;
     margin-top: 7%;
     font-family: 'Rubik Wet Paint', cursive;
     font-size: 7rem;
