@@ -954,7 +954,7 @@ html body {
 }
 
 .staffies {
-    padding: 0;
+    padding: 2%;
     margin-top: 50px;
     margin-left: 120px;
     display: flex;
@@ -965,9 +965,11 @@ html body {
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-family: 'Marvel', sans-serif;
+    font-size: 1rem;
     font-weight: bold;
     justify-content: center;
     text-align: center;
+
 }
 
 /*-------------------------gallery---------------------------------------*/
