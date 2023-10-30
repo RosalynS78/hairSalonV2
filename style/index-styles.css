@@ -7,7 +7,7 @@ html body {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -15,16 +15,20 @@ html body {
         "home"
         "about"
         "gallery"
-        "contact";
+        "contact"
+        "footer";
 }
 
 .headerMenu {
     grid-area: headerMenu;
+    background-image: url("/assets/logo/headerbg2.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .home {
     grid-area: home;
-    justify-content:  center;
+    justify-content: center;
 }
 
 .about {
@@ -42,15 +46,14 @@ html body {
     justify-content: center;
 }
 
-.headerMenu {
-    grid-area: header;
-    background-image: url("/assets/logo/headerbg2.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;
+.footer {
+    grid-area: footer;
+    justify-content: center;
 }
 
-/*-------------------------index/home---------------------------------------*/
 
+
+/*-------------------------index/home---------------------------------------*/
 
 /* logo title */
 .name {
@@ -83,8 +86,9 @@ html body {
     height: 220%;
     margin: 95% 0 0% 30%;
     padding: 5%;
- 
+
 }
+
 .hairlogo {
     display: flex;
     margin: 130px 130px 0 150px;
@@ -129,7 +133,6 @@ html body {
 
 .containerMenu {
     background-color: rgb(3, 3, 3);
-    display: flex;
 }
 
 .containerMenu .btn {
@@ -319,60 +322,6 @@ html body {
     margin-left: 50px;
 }
 
-/* section scroll */
-
-#section01 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
- 
-}
-
-.demo a {
-    bottom: 10px;
-    left: 50%;
-    z-index: 2;
-    display: inline-block;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    color: black;
-    font: normal 400 20px/1 'Josefin Sans', sans-serif;
-    letter-spacing: .1em;
-    text-decoration: none;
-    transition: opacity .3s;
-}
-
-.demo a:hover {
-    opacity: .3;
-}
-
-
-#section01 a span {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 46px;
-    height: 46px;
-    margin-left: -23px;
-    border: 2px solid black;
-    border-radius: 100%;
-    box-sizing: border-box;
-}
-
-#section01 a span::after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    content: '';
-    width: 16px;
-    height: 16px;
-    margin: -12px 0 0 -8px;
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    box-sizing: border-box;
-}
 
 /* home */
 #girlHero {
@@ -804,8 +753,6 @@ html body {
     justify-content: center;
     align-content: center;
     text-align: center;
-  
-   
 }
 
 .salonArea {
@@ -828,58 +775,6 @@ html body {
     -webkit-text-stroke: 1px black;
 }
 
-/* section scroll */
-#section02 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.demo a {
-    bottom: 10px;
-    left: 50%;
-    z-index: 2;
-    display: inline-block;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    color: black;
-    font: normal 400 20px/1 'Josefin Sans', sans-serif;
-    letter-spacing: .1em;
-    text-decoration: none;
-    transition: opacity .3s;
-}
-
-.demo a:hover {
-    opacity: .3;
-}
-
-#section02 a span {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 46px;
-    height: 46px;
-    margin-left: 286px;
-    margin-top: 158px;
-    border: 2px solid black;
-    border-radius: 100%;
-    box-sizing: border-box;
-}
-
-#section02 a span::after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    content: '';
-    width: 16px;
-    height: 16px;
-    margin: -12px 0 0 -8px;
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    box-sizing: border-box;
-}
 
 /* show/hide info */
 #harry-info {
@@ -951,6 +846,7 @@ html body {
 .staff-card {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .staffies {
@@ -988,6 +884,7 @@ html body {
     flex-direction: row;
     border-style: solid;
     margin-top: 2%;
+    justify-content: center;
 }
 
 /* elastic accordion 2 */
@@ -1109,39 +1006,10 @@ html body {
     }
 }
 
-/* section scroll */
-#section01 {
-    display: flex;
-    margin: 375% 0 0 0;
-    font-size: 15px;
-}
-
-#section02 {
-    display: flex;
-    margin: 20% 0 0 0;
-    font-size: 15px;
-}
-
-#section01 a span::after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    content: '';
-    width: 16px;
-    height: 16px;
-    margin: -12px 0 0 -8px;
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    box-sizing: border-box;
-}
-
 /*-------------------------contact---------------------------------------*/
 .contact {
     display: flex;
     grid-area: contact;
-    padding: 50px;
 }
 
 #sectionContact {
@@ -1151,67 +1019,123 @@ html body {
     background-position: left;
     grid-area: content;
     display: flex;
-    flex-direction: row;
-    padding: 60px;
+    margin-top: 2%;
     border-style: solid;
     justify-content: space-evenly;
-    margin-top: 50px;
 }
 
-/* section scroll */
-
-#section03 {
-    display: flex;
+.sideA {
     flex-direction: column;
+    display: flex;
+    padding: 20px;
+    font-family: 'Marvel', sans-serif;
+    font-size: 1rem;
+}
+
+.sideB {
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.778);
+    font-family: 'Marvel', sans-serif;
+    font-size: 1rem;
+}
+
+.hoursB {
+    font-size: 2rem;
+}
+
+#girlHero3 { 
+    height: 28rem;
+   
+}
+
+------------------------footer---------------------------------------*/
+
+.footer {
+    display: flex;
+    grid-area: footer;
+    padding: 1%;
+}
+
+.footerSocial {
+    display: flex;
     justify-content: center;
-    text-align: center;
-    margin-top: 40px;
-    font-size: 15px;
+    padding: 2.5%;
 }
 
-.demo a {
-    bottom: 10px;
-    left: 50%;
-    z-index: 2;
-    display: inline-block;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    color: black;
-    font: normal 400 20px/1 'Josefin Sans', sans-serif;
-    letter-spacing: .1em;
+.footerSocial .iconBtn_foot {
+    border-style: none;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 20px;
+}
+
+.footerSocial .iconBtn_foot:nth-child(1):hover {
+    background: rgb(255, 255, 0);
+    box-shadow: 0 0 5px yellow,
+        0 0 15px yellow,
+        0 0 30px yellow,
+        0 0 60px yellow;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.footerSocial .iconBtn_foot:nth-child(2):hover {
+    background: orange;
+    box-shadow: 0 0 5px orange,
+        0 0 15px orange,
+        0 0 30px orange,
+        0 0 60px orange;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.footerSocial .iconBtn_foot:nth-child(3):hover {
+    background: #00f2ff;
+    box-shadow: 0 0 5px #00f2ff,
+        0 0 15px #00f2ff,
+        0 0 30px #00f2ff,
+        0 0 60px #00f2ff;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.footerSocial .iconBtn_foot:nth-child(4):hover {
+    background: fuchsia;
+    box-shadow: 0 0 5px fuchsia,
+        0 0 15px fuchsia,
+        0 0 30px fuchsia,
+        0 0 60px fuchsia;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.h_foot {
     text-decoration: none;
-    transition: opacity .3s;
+    font-family: 'Marvel', sans-serif;
+    color: gray;
+   
+
 }
 
-.demo a:hover {
-    opacity: .3;
+.footHome {
+    margin-top: 15px;
+    padding: 0.2rem 1rem;
+    border: 2px solid #6f7a85;
+    cursor: pointer;
+    color: #6f7a85;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-#section03 a span {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 46px;
-    height: 46px;
-    margin-left: -680px;
-    margin-top: 300px;
-    border: 2px solid black;
-    border-radius: 100%;
-    box-sizing: border-box;
+.footHome:hover {
+    border-color: fuchsia;
+    box-shadow: rgba(245, 2, 217, 0.24) 0px 3px 8px;
 }
 
-#section03 a span::after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    content: '';
-    width: 16px;
-    height: 16px;
-    margin: -4px 0 0 -8px;
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
-    -webkit-transform: rotate(100deg);
-    transform: rotate(137deg);
-    box-sizing: border-box;
-}
+
 
