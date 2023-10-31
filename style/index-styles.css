@@ -11,7 +11,7 @@ html body {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        "headerMenu"
+        "header"
         "home"
         "about"
         "gallery"
@@ -19,7 +19,7 @@ html body {
         "footer";
 }
 
-.headerMenu {
+.header {
     grid-area: headerMenu;
     background-image: url("/assets/logo/headerbg2.jpg");
     background-repeat: no-repeat;
@@ -1045,14 +1045,23 @@ html body {
     font-size: 2rem;
 }
 
-#girlHero3 { 
-    height: 28rem;
-   
+#girlHero3 {
+    padding-top: 5%;
+    height: 25rem;
 }
 
-------------------------footer---------------------------------------*/
+#calendar_gif {
+    height: 1rem;
 
-.footer {
+}
+
+.book_gif {
+    display: flex;
+    align-items: center;
+}
+
+/* ------------------------footer---------------------------------------*/
+*/ .footer {
     display: flex;
     grid-area: footer;
     padding: 1%;
@@ -1115,7 +1124,7 @@ html body {
     text-decoration: none;
     font-family: 'Marvel', sans-serif;
     color: gray;
-   
+
 
 }
 
@@ -1136,6 +1145,3 @@ html body {
     border-color: fuchsia;
     box-shadow: rgba(245, 2, 217, 0.24) 0px 3px 8px;
 }
-
-
-
