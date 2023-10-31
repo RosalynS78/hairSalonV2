@@ -1,20 +1,20 @@
 # hairSalonV2
 
--hair salon website version 2
+**hair salon website version 2**
 
 -main focus CSS
 
--responsive
+-responsive *(all that's left to do)*
 
 -difference between v1 and v2
 
-one page design “one page scrolling”website
+one page design “one page scrolling"
 
-working book appointment form
+book appointment form
 
 goals
 
-- practice shorthand css
+-practice shorthand css
 
 -better understanding of units
 
