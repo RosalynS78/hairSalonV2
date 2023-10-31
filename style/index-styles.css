@@ -51,8 +51,6 @@ html body {
     justify-content: center;
 }
 
-
-
 /*-------------------------index/home---------------------------------------*/
 
 /* logo title */
@@ -322,7 +320,6 @@ html body {
     margin-left: 50px;
 }
 
-
 /* home */
 #girlHero {
     height: 110%;
@@ -371,7 +368,6 @@ html body {
 }
 
 /* hidden card 1 */
-
 .hidden1 {
     display: none;
 }
@@ -462,7 +458,6 @@ html body {
 }
 
 /* card-2 */
-
 .card-2 {
     display: flex;
     justify-content: center;
@@ -592,7 +587,6 @@ html body {
     font-size: 1rem;
     color: black;
     list-style-type: none;
-
 }
 
 .card-0 .cardBtn {
@@ -625,7 +619,6 @@ html body {
 .card-0 .cardBtn {
     opacity: 1;
 }
-
 
 /* description */
 .description {
@@ -720,7 +713,6 @@ html body {
     border-style: solid;
     margin-top: 2%;
     justify-content: center;
-
 }
 
 /* staff avatars */
@@ -738,7 +730,6 @@ html body {
     display: flex;
     justify-content: center;
     font-family: 'Marvel', sans-serif;
-
 }
 
 #workers img {
@@ -774,7 +765,6 @@ html body {
     color: purple;
     -webkit-text-stroke: 1px black;
 }
-
 
 /* show/hide info */
 #harry-info {
@@ -865,7 +855,6 @@ html body {
     font-weight: bold;
     justify-content: center;
     text-align: center;
-
 }
 
 /*-------------------------gallery---------------------------------------*/
@@ -890,7 +879,6 @@ html body {
 /* elastic accordion 2 */
 .main {
     display: flex;
-
     width: 15vw;
     height: 65vh;
     background-position: center;
@@ -1050,16 +1038,6 @@ html body {
     height: 25rem;
 }
 
-#calendar_gif {
-    height: 1rem;
-
-}
-
-.book_gif {
-    display: flex;
-    align-items: center;
-}
-
 /* ------------------------footer---------------------------------------*/
 */ .footer {
     display: flex;
@@ -1124,8 +1102,6 @@ html body {
     text-decoration: none;
     font-family: 'Marvel', sans-serif;
     color: gray;
-
-
 }
 
 .footHome {
