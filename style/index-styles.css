@@ -623,7 +623,7 @@ html body {
 /* description */
 .description {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
     margin-left: 280px;
@@ -696,6 +696,14 @@ html body {
     transition-delay: 0s;
 }
 
+.scroll {
+    height: 3rem;
+}
+
+.down1 {
+    display: flex;
+    margin-top: 30%;
+}
 /*-------------------------about---------------------------------------*/
 .about {
     display: flex;
@@ -829,7 +837,7 @@ html body {
 }
 
 .BB:hover {
-    border-color: fuchsia;
+    border-color: rgb(255, 0, 255);
     box-shadow: rgba(245, 2, 217, 0.24) 0px 3px 8px;
 }
 
@@ -857,12 +865,23 @@ html body {
     text-align: center;
 }
 
+.down2 {
+display: flex;
+margin-top: 30%;
+}
+
 /*-------------------------gallery---------------------------------------*/
 .gallery {
     display: flex;
-    grid-area: gallery;
-    padding: 50px;
+    grid-area: gallery; 
+    
+   
 }
+
+.down3 {
+    display: flex;
+    margin-top: 23%;
+    }
 
 #sectionGallery {
     background-image: url(/assets/logo/contentBg.jpg);
@@ -873,7 +892,7 @@ html body {
     flex-direction: row;
     border-style: solid;
     margin-top: 2%;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 /* elastic accordion 2 */
@@ -886,7 +905,6 @@ html body {
     gap: 1rem;
     margin: 1vw;
     border-radius: 3vw;
-    margin: 45px;
     max-width: 100%;
     width: 72rem;
     cursor: pointer;
@@ -994,12 +1012,16 @@ html body {
     }
 }
 
+
 /*-------------------------contact---------------------------------------*/
 .contact {
     display: flex;
     grid-area: contact;
 }
-
+.up {
+    display: flex;
+    margin-left: 40%
+    }
 #sectionContact {
     background-image: url(/assets/logo/contentBg.jpg);
     background-repeat: no-repeat;
@@ -1037,6 +1059,7 @@ html body {
     padding-top: 5%;
     height: 25rem;
 }
+
 
 /* ------------------------footer---------------------------------------*/
 */ .footer {
@@ -1098,26 +1121,3 @@ html body {
     transition-delay: 0s;
 }
 
-.h_foot {
-    text-decoration: none;
-    font-family: 'Marvel', sans-serif;
-    color: gray;
-}
-
-.footHome {
-    margin-top: 15px;
-    padding: 0.2rem 1rem;
-    border: 2px solid #6f7a85;
-    cursor: pointer;
-    color: #6f7a85;
-    font-size: 1.2rem;
-    text-align: center;
-    border-radius: 10px;
-    font-weight: 500;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.footHome:hover {
-    border-color: fuchsia;
-    box-shadow: rgba(245, 2, 217, 0.24) 0px 3px 8px;
-}
