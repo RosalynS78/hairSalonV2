@@ -57,18 +57,16 @@ html body {
 .name {
     display: flex;
     flex-direction: row;
-    margin: 3% 0 0 4%;
-    margin: 6% 0 0 4%;
+    margin: 1.5% 0 0 1%;
+  
 }
 
 .title1 {
     display: flex;
     justify-content: center;
-    justify-content: flex-end;
-    margin-top: 7%;
+    margin-top: 16%;
     font-family: 'Rubik Wet Paint', cursive;
-    font-size: 7rem;
-    margin-top: 12%;
+    font-size: 6.5rem;
 }
 
 .title2 {
@@ -82,7 +80,7 @@ html body {
 /* hairdryer animation */
 #blowDryer {
     height: 220%;
-    margin: 95% 0 0% 30%;
+    margin: 140% 0 0% 30%;
     padding: 5%;
 
 }
