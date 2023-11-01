@@ -1118,7 +1118,9 @@ margin-top: 30%;
     transition-delay: 0s;
 }
 
-/*------------responsive web design----------------*//* laptop */
+/*------------responsive web design----------------*/
+
+/* laptop */
 @media (max-width: 992px) {
     .header {
         display: block;
