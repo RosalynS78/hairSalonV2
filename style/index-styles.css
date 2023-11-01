@@ -1221,3 +1221,59 @@ margin-top: 30%;
     }
 }
 
+/* phone */
+@media (max-width: 576px) {
+    .header {
+        display: block;
+    }
+    #horizontal {
+        display: none;
+    }
+    #main {
+        display: flex;
+    }
+    .hairlogo {
+        display: none;
+    }
+    .name {
+        display: flex;
+        margin-right: 40px;
+        margin-top: 100px;
+    }
+    .title1 {
+        font-size: 55px;
+        padding: 0px;
+    }
+    .title2 {
+        font-size: 40px;
+        padding: 0px;
+        margin-top: 250px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .landing-table {
+        display: flex;
+        flex-direction: column;
+    }
+    .table {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer {
+        display: inline-block;
+        justify-items: center;
+        padding-top: 20px;
+        padding-left: 70px;
+        padding-right: 30px;
+    }
+    .copy {
+        display: inline;
+        justify-content: center;
+    }
+    .icons {
+        display: inline;
+    }
+}
+
