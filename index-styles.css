@@ -871,13 +871,13 @@ margin-top: 30%;
 /*-------------------------gallery---------------------------------------*/
 .gallery {
     display: flex;
-    grid-area: gallery; 
+    grid-area: gallery;
 }
 
 .down3 {
     display: flex;
     margin-top: 23%;
-    margin-left: 1%;
+    margin-left: 2%;
     }
 
 #sectionGallery {
@@ -900,7 +900,7 @@ margin-top: 30%;
     background-position: center;
     flex-direction: row;
     gap: 1rem;
-    margin: 1vw;
+    margin: 2vw;
     border-radius: 3vw;
     max-width: 100%;
     width: 72rem;
