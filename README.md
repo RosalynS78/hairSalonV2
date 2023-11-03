@@ -21,3 +21,5 @@ goals
 -don't use inline styles
 
 -cleaner codes
+
+- practice git fetch and git pull 
