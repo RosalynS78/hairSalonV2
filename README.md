@@ -22,4 +22,4 @@ goals
 
 -cleaner codes
 
-- practice git fetch and git pull 
+-practice git fetch and git pull 
