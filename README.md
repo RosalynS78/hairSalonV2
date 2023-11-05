@@ -24,6 +24,8 @@ goals
 
 -practice git fetch and git pull 
 
+make sure all links work -
+
 took an old project when first learning html and css 
 learn orgization in coding files / cleaner codes
 review of css basics 
