@@ -20,8 +20,8 @@ html body {
 }
 
 .header {
-    grid-area: headerMenu;
-    background-image: url("/assets/logo/headerbg2.jpg");
+    grid-area: header;
+    background-image: url("/hairSalonV2/assets/logo/headerbg2.jpg");
     background-repeat: no-repeat;
     background-size: auto;
 }
@@ -58,7 +58,7 @@ html body {
     display: flex;
     flex-direction: row;
     margin: 1.5% 0 0 1%;
-  
+
 }
 
 .title1 {
@@ -245,7 +245,6 @@ html body {
 }
 
 /* burger menu */
-/* @media query */
 .menu {
     padding-top: 0%;
     margin-top: 0%;
@@ -338,7 +337,7 @@ html body {
 }
 
 #sectionHome {
-    background-image: url(/assets/logo/contentBg.jpg);
+    background-image: url(/hairSalonV2/assets/logo/contentBg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -703,6 +702,7 @@ html body {
     display: flex;
     margin-top: 30%;
 }
+
 /*-------------------------about---------------------------------------*/
 .about {
     display: flex;
@@ -712,7 +712,7 @@ html body {
 }
 
 #sectionAbout {
-    background-image: url(/assets/logo/contentBg.jpg);
+    background-image: url(/hairSalonV2/assets/logo/contentBg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -836,7 +836,7 @@ html body {
 }
 
 .BB:hover {
-    border-color: rgb(237,30,121);
+    border-color: rgb(237, 30, 121);
     box-shadow: rgba(245, 2, 217, 0.24) 0px 3px 8px;
 }
 
@@ -865,8 +865,8 @@ html body {
 }
 
 .down2 {
-display: flex;
-margin-top: 30%;
+    display: flex;
+    margin-top: 30%;
 }
 
 /*-------------------------gallery---------------------------------------*/
@@ -879,10 +879,10 @@ margin-top: 30%;
     display: flex;
     margin-top: 23%;
     margin-left: 2%;
-    }
+}
 
 #sectionGallery {
-    background-image: url(/assets/logo/contentBg.jpg);
+    background-image: url(/hairSalonV2/assets/logo/contentBg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -916,7 +916,7 @@ margin-top: 30%;
 }
 
 .card-content {
-    background: #FFF url('/assets/gallery/1-1.avif') 40% / cover no-repeat;
+    background: #FFF url('/hairSalonV2/assets/gallery/1-1.avif') 40% / cover no-repeat;
     border-radius: 0.25rem;
     cursor: pointer;
     flex: 1;
@@ -926,20 +926,20 @@ margin-top: 30%;
 }
 
 .card-content:nth-of-type(2) {
-    background-image: url('/assets/gallery/2-2.avif');
+    background-image: url('/hairSalonV2/assets/gallery/2-2.avif');
 
 }
 
 .card-content:nth-of-type(3) {
-    background-image: url('/assets/gallery/3-3.avif');
+    background-image: url('/hairSalonV2/assets/gallery/3-3.avif');
 }
 
 .card-content:nth-of-type(4) {
-    background-image: url('/assets/gallery/4-4.avif');
+    background-image: url('/hairSalonV2/assets/gallery/4-4.avif');
 }
 
 .card-content:last-of-type {
-    background-image: url('/assets/gallery/5-5.avif');
+    background-image: url('/hairSalonV2/assets/gallery/5-5.avif');
 }
 
 .card-title {
@@ -1015,12 +1015,14 @@ margin-top: 30%;
     display: flex;
     grid-area: contact;
 }
+
 .up {
     display: flex;
     margin-left: 40%
-    }
+}
+
 #sectionContact {
-    background-image: url(/assets/logo/contentBg.jpg);
+    background-image: url(/hairSalonV2/assets/logo/contentBg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -1118,4 +1120,27 @@ margin-top: 30%;
     transition-delay: 0s;
 }
 
-/* media queries laptop, tablet, phone */
+/* responsive */
+/* @media is the actually media query. The word screen is adding the 'conditions' to the media query. So @media screen is telling the media query to apply (whatever other conditions) to screens. For example, @media screen and (max-width: 360px) will target only screens with a max-width of 360px. */
+
+
+@media (max-width: 992px) {
+    .header {
+        background-image: url("/hairSalonV2/assets/logo/headerbg.jpg");
+        margin: 15%;
+    }
+
+    .title1 {
+        font-size: 5.5rem;
+        text-align: center;
+    }
+
+    .title2 {
+        font-size: 3rem;
+    }
+
+    #blowDryer {
+        margin-left: 80%;
+    }
+
+}
