@@ -22,11 +22,11 @@ goals
 
 -cleaner codes
 
--practice git fetch and git pull 
+-practice git fetch and git pull
 
 make sure all links work -
 
-took an old project when first learning html and css 
+took an old project when first learning html and css
 learn orgization in coding files / cleaner codes
-review of css basics 
-flexbox, media queries, form , one page design, units
+review of css basics
+flexbox, media queries, form , units
