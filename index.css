@@ -2,6 +2,7 @@ html body {
     display: flex;
     justify-content: center;
     scroll-behavior: smooth;
+    height: 100vh;
 }
 
 .container {
@@ -1125,9 +1126,10 @@ html body {
 
 /* laptop */
 @media (max-width: 992px) {
+    /* home */
     .header {
         background-image: url("/hairSalonV2/assets/logo/headerbg.jpg");
-        margin: 15%;
+        margin: 0 15% 0 15%;
     }
 
     .title1 {
@@ -1148,7 +1150,6 @@ html body {
         margin-bottom: 55px;
     }
 
-    
     #blowDryer {
         margin-left: 80%;
     }
@@ -1191,9 +1192,8 @@ html body {
     }
 
     .down1 {
-        margin-left: 2rem;
+        margin-left: 1rem;
     }
-
 
     .card-1 {
         height: 324px;
@@ -1214,5 +1214,53 @@ html body {
         font-size: 1rem;
     }
 
+/* about */
+
+.staff {
+    margin-left: 1rem;
+   
+}
+#pMeet {
+    font-size: 1rem;
+
+    
+}
+
+#pNames {
+    font-size: .8rem;
+    
+}
+#workers img {
+    width: 75px;
+   
+  
+}
+
+.visit {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.salonArea {
+    height: 18vh;
+
+}
+
+.staffies {
+    height: 300px;
+    width: 30vh;
+    margin-right: 240px;
+    font-size: .8rem;
+}
+
+.down2 {
+    margin-left: 14rem;
+}
+
+/* gallery */
+
+.main {
+    width: 85vw;
+}
 
 }
