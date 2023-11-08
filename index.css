@@ -1258,5 +1258,184 @@ html body {
     .main {
         width: 85vw;
     }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+
+#sectionHome {
+   display: block;
+   height: 26%;
+}
+#main {
+    display: block;
+}
+
+.home {
+    display: block;
+}
+.header {
+    background-position-x: center;
+}
+
+.name, .title2 {
+    justify-content: center;
+    margin-top: 5%;
+}
+ .description, .social, .down1, .down2, .hairlogo, .card-1, .card-2, #horizontal {
+    display: none;
+}
+
+.card-0 {
+    display: block;
+    height: 355px;
+    width: 100%;
+}
+
+.card-0 .cardHeading {
+    font-size: 35px;
+}
+
+.card-0 .hours {
+    font-size: 18px;
+}
+
+.hidden1 {
+    display: block;
+    justify-content: left;
+    align-items: center;
+    height: 355px;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 20px;
+    font-family: 'Marvel', sans-serif;
+    font-weight: bold;
+}
+
+.hidden1 .hidden1Content {
+    margin: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 10px;
+}
+
+.hidden1 .hidden1Heading {
+    font-size: 35px;
+    color: black;
+}
+
+.hidden1 .hidden1Para {
+    margin-top: 15px;
+    width: 235px;
+    font-size: 18px;
+    color: black;
+    list-style-type: none;
+}
+
+.hidden1 .hidden1Btn {
+    margin-top: 15px;
+    padding: 0.2rem 1rem;
+    border: 2px solid #6f7a85;
+    transition: 0.4s;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    color: #6f7a85;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.hidden1 .hidden1Btn:hover {
+    background: black;
+    box-shadow: 0 0 5px fuchsia,
+        0 0 15px fuchsia,
+        0 0 30px fuchsia,
+        0 0 60px fuchsia;
+    color: white;
+    border-style: none;
+}
+
+.hidden1Girl {
+    display: flex;
+    margin-left: 130px;
+}
+
+.hidden2 {
+    display: block;
+    justify-content: left;
+    align-items: center;
+    height: 355px;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 20px;
+    margin-bottom: 260px;
+    font-family: 'Marvel', sans-serif;
+    font-weight: bold;
+}
+
+.hidden2 .hidden2Content {
+    margin: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 10px;
+}
+
+.hidden2 .hidden2Heading {
+    font-size: 35px;
+    color: black;
+}
+
+.hidden2 .hidden2Para {
+    margin-top: 15px;
+    width: 235px;
+    font-size: 18px;
+    color: black;
+    list-style-type: none;
+}
+
+.hidden2 .hidden2Btn {
+    margin-top: 15px;
+    padding: 0.2rem 1rem;
+    border: 2px solid #6f7a85;
+    transition: 0.4s;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    color: #6f7a85;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.hidden2 .hidden2Btn:hover {
+    background: black;
+    box-shadow: 0 0 5px yellow,
+        0 0 15px yellow,
+        0 0 30px yellow,
+        0 0 60px yellow;
+    color: white;
+    border-style: none;
+}
+
+.hidden2Girl {
+    display: block;
+    margin-left: 145px;
+}
+
+/* about */
+#sectionAbout {
+    display: block;
+}
 
 }
