@@ -1262,13 +1262,16 @@ html body {
 
 /* tablet */
 @media (max-width: 768px) {
-
+    
 #sectionHome {
    display: block;
-   height: 26%;
+   height: 30%;
 }
 #main {
     display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 
 .home {
@@ -1435,7 +1438,55 @@ html body {
 
 /* about */
 #sectionAbout {
-    display: block;
+    height: 20%;
 }
 
+#workers img {
+    display: flex;
+    width: 135px;
+    margin-left: 60px;
+}
+
+#pMeet {
+    margin-left: 80px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Marvel', sans-serif;
+}
+
+#pNames {
+    display: flex;
+    justify-content: center;
+    font-family: 'Marvel', sans-serif;
+}
+
+
+.visit, .areaPic {
+    display: none;
+}
+
+#workers {
+   margin-left: 50px;
+}
+
+.staff-card {
+    display: block;
+    margin-top: 150px;
+}
+
+.staffies {
+    font-size: 1rem;
+    height: 440px;
+}
+
+/* gallery and contact */
+.down3, .up {
+    display: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 }
