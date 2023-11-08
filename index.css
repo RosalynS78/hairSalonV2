@@ -22,7 +22,7 @@ html body {
 
 .header {
     grid-area: header;
-    background-image: url("/hairSalonV2/assets/logo/headerbg2.jpg");
+    background-image: url('/assets/logo/headerbg2.jpg');
     background-repeat: no-repeat;
     background-size: auto;
 }
@@ -338,7 +338,7 @@ html body {
 }
 
 #sectionHome {
-    background-image: url(/hairSalonV2/assets/logo/contentBg.jpg);
+    background-image: url('/assets/logo/contentBg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -713,7 +713,7 @@ html body {
 }
 
 #sectionAbout {
-    background-image: url(/hairSalonV2/assets/logo/contentBg.jpg);
+    background-image: url('/assets/logo/contentBg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -883,7 +883,7 @@ html body {
 }
 
 #sectionGallery {
-    background-image: url(/hairSalonV2/assets/logo/contentBg.jpg);
+    background-image: url('/assets/logo/contentBg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -917,7 +917,7 @@ html body {
 }
 
 .card-content {
-    background: #FFF url('/hairSalonV2/assets/gallery/1-1.avif') 40% / cover no-repeat;
+    background: #FFF url('/assets/gallery/1-1.avif') 40% / cover no-repeat;
     border-radius: 0.25rem;
     cursor: pointer;
     flex: 1;
@@ -927,20 +927,20 @@ html body {
 }
 
 .card-content:nth-of-type(2) {
-    background-image: url('/hairSalonV2/assets/gallery/2-2.avif');
+    background-image: url('/assets/gallery/2-2.avif');
 
 }
 
 .card-content:nth-of-type(3) {
-    background-image: url('/hairSalonV2/assets/gallery/3-3.avif');
+    background-image: url('/assets/gallery/3-3.avif');
 }
 
 .card-content:nth-of-type(4) {
-    background-image: url('/hairSalonV2/assets/gallery/4-4.avif');
+    background-image: url('/assets/gallery/4-4.avif');
 }
 
 .card-content:last-of-type {
-    background-image: url('/hairSalonV2/assets/gallery/5-5.avif');
+    background-image: url('/assets/gallery/5-5.avif');
 }
 
 .card-title {
@@ -1023,7 +1023,7 @@ html body {
 }
 
 #sectionContact {
-    background-image: url(/hairSalonV2/assets/logo/contentBg.jpg);
+    background-image: url('/assets/logo/contentBg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -1126,9 +1126,10 @@ html body {
 
 /* laptop */
 @media (max-width: 992px) {
+
     /* home */
     .header {
-        background-image: url("/hairSalonV2/assets/logo/headerbg.jpg");
+        background-image: url('/assets/logo/headerbg.jpg');
         margin: 0 15% 0 15%;
     }
 
@@ -1143,7 +1144,7 @@ html body {
 
     .home {
         gap: 25px;
-        padding: 35px;
+        padding: 30px;
     }
 
     .social {
@@ -1192,7 +1193,7 @@ html body {
     }
 
     .down1 {
-        margin-left: 1rem;
+        margin-right: 2rem;
     }
 
     .card-1 {
@@ -1207,60 +1208,55 @@ html body {
     .card-2 {
         height: 325px;
         width: 20px;
-        margin-right: 2rem;
+        margin-right: 1rem;
     }
 
     .card-2 .para {
         font-size: 1rem;
     }
 
-/* about */
+    /* about */
 
-.staff {
-    margin-left: 1rem;
-   
-}
-#pMeet {
-    font-size: 1rem;
+    .staff {
+        margin-left: 1rem;
+    }
 
-    
-}
+    #pMeet {
+        font-size: 1rem;
+    }
 
-#pNames {
-    font-size: .8rem;
-    
-}
-#workers img {
-    width: 75px;
-   
-  
-}
+    #pNames {
+        font-size: .8rem;
+    }
 
-.visit {
-    font-size: 2rem;
-    margin-right: 1rem;
-}
+    #workers img {
+        width: 75px;
+    }
 
-.salonArea {
-    height: 18vh;
+    .visit {
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
 
-}
+    .salonArea {
+        height: 18vh;
+    }
 
-.staffies {
-    height: 300px;
-    width: 30vh;
-    margin-right: 240px;
-    font-size: .8rem;
-}
+    .staffies {
+        height: 300px;
+        width: 30vh;
+        margin-right: 240px;
+        font-size: .8rem;
+    }
 
-.down2 {
-    margin-left: 14rem;
-}
+    .down2 {
+        margin-left: 14rem;
+    }
 
-/* gallery */
+    /* gallery */
 
-.main {
-    width: 85vw;
-}
+    .main {
+        width: 85vw;
+    }
 
 }
