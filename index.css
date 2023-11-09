@@ -22,7 +22,7 @@ html body {
 
 .header {
     grid-area: header;
-    background-image: url('/assets/logo/headerbg2.jpg');
+    background-image: url('assets/logo/headerbg2.jpg');
     background-repeat: no-repeat;
     background-size: auto;
 }
@@ -338,7 +338,7 @@ html body {
 }
 
 #sectionHome {
-    background-image: url('/assets/logo/contentBg.jpg');
+    background-image: url('assets/logo/contentBg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -713,7 +713,7 @@ html body {
 }
 
 #sectionAbout {
-    background-image: url('/assets/logo/contentBg.jpg');
+    background-image: url('assets/logo/contentBg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -883,7 +883,7 @@ html body {
 }
 
 #sectionGallery {
-    background-image: url('/assets/logo/contentBg.jpg');
+    background-image: url('assets/logo/contentBg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -917,7 +917,7 @@ html body {
 }
 
 .card-content {
-    background: #FFF url('/assets/gallery/1-1.avif') 40% / cover no-repeat;
+    background: #FFF url('assets/gallery/1-1.avif') 40% / cover no-repeat;
     border-radius: 0.25rem;
     cursor: pointer;
     flex: 1;
@@ -927,20 +927,20 @@ html body {
 }
 
 .card-content:nth-of-type(2) {
-    background-image: url('/assets/gallery/2-2.avif');
+    background-image: url('assets/gallery/2-2.avif');
 
 }
 
 .card-content:nth-of-type(3) {
-    background-image: url('/assets/gallery/3-3.avif');
+    background-image: url('assets/gallery/3-3.avif');
 }
 
 .card-content:nth-of-type(4) {
-    background-image: url('/assets/gallery/4-4.avif');
+    background-image: url('assets/gallery/4-4.avif');
 }
 
 .card-content:last-of-type {
-    background-image: url('/assets/gallery/5-5.avif');
+    background-image: url('assets/gallery/5-5.avif');
 }
 
 .card-title {
@@ -1023,7 +1023,7 @@ html body {
 }
 
 #sectionContact {
-    background-image: url('/assets/logo/contentBg.jpg');
+    background-image: url('assets/logo/contentBg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -1129,7 +1129,7 @@ html body {
 
     /* home */
     .header {
-        background-image: url('/assets/logo/headerbg.jpg');
+        background-image: url('assets/logo/headerbg.jpg');
         margin: 0 15% 0 15%;
     }
 
