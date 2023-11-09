@@ -13,4 +13,4 @@ one page design “one page scrolling"
 added book appointment form
 
 review of css basics
-flexbox, media queries, form , units
+flexbox, media queries, grid system, units
