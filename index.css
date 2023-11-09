@@ -256,7 +256,7 @@ html body {
     background-color: black;
     color: white;
     transition: margin-left .5s;
-    padding: 15px;
+    padding: 14px;
 }
 
 .sidenav {
@@ -272,7 +272,7 @@ html body {
     /* Stay at the top */
     left: 0;
     /* transparency */
-    opacity: .9;
+    opacity: .8;
     background-color: #111111;
     /* Black*/
     overflow-x: hidden;
@@ -1262,231 +1262,363 @@ html body {
 
 /* tablet */
 @media (max-width: 768px) {
-    
-#sectionHome {
-   display: block;
-   height: 30%;
-}
-#main {
-    display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
+
+    #sectionHome {
+        display: block;
+        height: 30%;
+    }
+
+    #main {
+        display: block;
+        position: relative;
+        left: 0;
+    }
+
+    .home {
+        display: block;
+    }
+
+    .header {
+        background-position-x: center;
+    }
+
+    .name,
+    .title2 {
+        justify-content: center;
+        margin-top: 5%;
+    }
+
+    .description,
+    .social,
+    .down1,
+    .down2,
+    .hairlogo,
+    .card-1,
+    .card-2,
+    #horizontal {
+        display: none;
+    }
+
+    .card-0 {
+        display: block;
+        height: 355px;
+        width: 100%;
+    }
+
+    .card-0 .cardHeading {
+        font-size: 35px;
+    }
+
+    .card-0 .hours {
+        font-size: 18px;
+    }
+
+    .hidden1 {
+        display: block;
+        justify-content: left;
+        align-items: center;
+        height: 355px;
+        width: 100%;
+        background: #fff;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-top: 20px;
+        font-family: 'Marvel', sans-serif;
+        font-weight: bold;
+    }
+
+    .hidden1 .hidden1Content {
+        margin: 5px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-left: 10px;
+    }
+
+    .hidden1 .hidden1Heading {
+        font-size: 35px;
+        color: black;
+    }
+
+    .hidden1 .hidden1Para {
+        margin-top: 15px;
+        width: 235px;
+        font-size: 18px;
+        color: black;
+        list-style-type: none;
+    }
+
+    .hidden1 .hidden1Btn {
+        margin-top: 15px;
+        padding: 0.2rem 1rem;
+        border: 2px solid #6f7a85;
+        transition: 0.4s;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        color: #6f7a85;
+        font-size: 1.2rem;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: 500;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .hidden1 .hidden1Btn:hover {
+        background: black;
+        box-shadow: 0 0 5px fuchsia,
+            0 0 15px fuchsia,
+            0 0 30px fuchsia,
+            0 0 60px fuchsia;
+        color: white;
+        border-style: none;
+    }
+
+    .hidden1Girl {
+        display: flex;
+        margin-left: 130px;
+    }
+
+    .hidden2 {
+        display: block;
+        justify-content: left;
+        align-items: center;
+        height: 355px;
+        width: 100%;
+        background: #fff;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-top: 20px;
+        margin-bottom: 260px;
+        font-family: 'Marvel', sans-serif;
+        font-weight: bold;
+    }
+
+    .hidden2 .hidden2Content {
+        margin: 5px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-left: 10px;
+    }
+
+    .hidden2 .hidden2Heading {
+        font-size: 35px;
+        color: black;
+    }
+
+    .hidden2 .hidden2Para {
+        margin-top: 15px;
+        width: 235px;
+        font-size: 18px;
+        color: black;
+        list-style-type: none;
+    }
+
+    .hidden2 .hidden2Btn {
+        margin-top: 15px;
+        padding: 0.2rem 1rem;
+        border: 2px solid #6f7a85;
+        transition: 0.4s;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        color: #6f7a85;
+        font-size: 1.2rem;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: 500;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .hidden2 .hidden2Btn:hover {
+        background: black;
+        box-shadow: 0 0 5px yellow,
+            0 0 15px yellow,
+            0 0 30px yellow,
+            0 0 60px yellow;
+        color: white;
+        border-style: none;
+    }
+
+    .hidden2Girl {
+        display: block;
+        margin-left: 145px;
+    }
+
+    /* about */
+    #sectionAbout {
+        height: 20%;
+    }
+
+    #workers img {
+        display: flex;
+        width: 135px;
+        margin-left: 60px;
+    }
+
+    #pMeet {
+        margin-left: 80px;
+        font-size: 30px;
+        text-align: center;
+        font-family: 'Marvel', sans-serif;
+    }
+
+    #pNames {
+        display: flex;
+        justify-content: center;
+        font-family: 'Marvel', sans-serif;
+    }
+
+
+    .visit,
+    .areaPic {
+        display: none;
+    }
+
+    #workers {
+        width: 50px;
+        margin-left: 50px;
+    }
+
+    #pMeet {
+        margin-left: 100px;
+    }
+
+    .staff-card {
+        display: block;
+        margin-top: 150px;
+    }
+
+    .staffies {
+        font-size: 1rem;
+        height: 440px;
+    }
+
+    /* gallery and contact */
+    .down3,
+    .up {
+        display: none;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact,
+    .footer {
+        display: block;
+    }
+
+    .HH,
+    .BB,
+    .SS {
+        border-radius: 0;
+    }
 }
 
-.home {
-    display: block;
-}
-.header {
-    background-position-x: center;
-}
+/* phone */
+@media (max-width: 576px) {
+    .container {
+        display: block;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 100vh;
+    }
 
-.name, .title2 {
-    justify-content: center;
-    margin-top: 5%;
-}
- .description, .social, .down1, .down2, .hairlogo, .card-1, .card-2, #horizontal {
-    display: none;
-}
+    #sectionHome {
+        display: block;
+        justify-items: center;
+    }
 
-.card-0 {
-    display: block;
-    height: 355px;
-    width: 100%;
-}
+    .header {
+        display: block;
+        background-size: 90%;
+        justify-content: center;
+        margin-top: 0;
+        padding: 0;
+    }
 
-.card-0 .cardHeading {
-    font-size: 35px;
-}
+    .title1 {
+        font-size: 3.5rem;
+        margin-top: 6rem;
+        text-align: center;
+    }
 
-.card-0 .hours {
-    font-size: 18px;
-}
+    .title2 {
+        font-size: 2.6rem;
+        margin: 0;
+        padding: 0;
+        align-content: center;
+    }
 
-.hidden1 {
-    display: block;
-    justify-content: left;
-    align-items: center;
-    height: 355px;
-    width: 100%;
-    background: #fff;
-    position: relative;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin-top: 20px;
-    font-family: 'Marvel', sans-serif;
-    font-weight: bold;
-}
+    .hidden1Girl,
+    .hidden2Girl,
+    #girlHero3 {
+        display: none;
+    }
 
-.hidden1 .hidden1Content {
-    margin: 5px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding-left: 10px;
-}
+    .hidden1,
+    .hidden2,
+    .card-0 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 
-.hidden1 .hidden1Heading {
-    font-size: 35px;
-    color: black;
-}
+    .card-0,
+    .hidden1,
+    .hidden2 {
+        display: block;
+        justify-content: center;
+    }
 
-.hidden1 .hidden1Para {
-    margin-top: 15px;
-    width: 235px;
-    font-size: 18px;
-    color: black;
-    list-style-type: none;
-}
+    .about {
+        display: block;
+    }
 
-.hidden1 .hidden1Btn {
-    margin-top: 15px;
-    padding: 0.2rem 1rem;
-    border: 2px solid #6f7a85;
-    transition: 0.4s;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    color: #6f7a85;
-    font-size: 1.2rem;
-    text-align: center;
-    border-radius: 10px;
-    font-weight: 500;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
+    #workers img {
+        width: 50px;
+        margin-left: 50px;
+    }
 
-.hidden1 .hidden1Btn:hover {
-    background: black;
-    box-shadow: 0 0 5px fuchsia,
-        0 0 15px fuchsia,
-        0 0 30px fuchsia,
-        0 0 60px fuchsia;
-    color: white;
-    border-style: none;
-}
+    #pMeet {
+        margin-left: 50px;
+    }
 
-.hidden1Girl {
-    display: flex;
-    margin-left: 130px;
-}
+    #workers {
+        margin-left: 10px;
+    }
 
-.hidden2 {
-    display: block;
-    justify-content: left;
-    align-items: center;
-    height: 355px;
-    width: 100%;
-    background: #fff;
-    position: relative;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin-top: 20px;
-    margin-bottom: 260px;
-    font-family: 'Marvel', sans-serif;
-    font-weight: bold;
-}
+    .staff-card {
 
-.hidden2 .hidden2Content {
-    margin: 5px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding-left: 10px;
-}
+        margin-right: 80px;
+        margin-bottom: 50px;
+    }
 
-.hidden2 .hidden2Heading {
-    font-size: 35px;
-    color: black;
-}
+    .staffies {
+        width: 55%;
+        height: 85%;
+        margin-left: 45px;
+        margin-bottom: 10px;
+        font-size: .8rem;
+        padding: 5px;
+    }
 
-.hidden2 .hidden2Para {
-    margin-top: 15px;
-    width: 235px;
-    font-size: 18px;
-    color: black;
-    list-style-type: none;
-}
+    .sideA {
+        width: 50%;
+    }
 
-.hidden2 .hidden2Btn {
-    margin-top: 15px;
-    padding: 0.2rem 1rem;
-    border: 2px solid #6f7a85;
-    transition: 0.4s;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    color: #6f7a85;
-    font-size: 1.2rem;
-    text-align: center;
-    border-radius: 10px;
-    font-weight: 500;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
+    .copy {
+        display: block;
+        font-size: .7rem;
+        text-align: center;
+    }
 
-.hidden2 .hidden2Btn:hover {
-    background: black;
-    box-shadow: 0 0 5px yellow,
-        0 0 15px yellow,
-        0 0 30px yellow,
-        0 0 60px yellow;
-    color: white;
-    border-style: none;
-}
+    .main {
+        padding: 40px;
+    }
 
-.hidden2Girl {
-    display: block;
-    margin-left: 145px;
-}
-
-/* about */
-#sectionAbout {
-    height: 20%;
-}
-
-#workers img {
-    display: flex;
-    width: 135px;
-    margin-left: 60px;
-}
-
-#pMeet {
-    margin-left: 80px;
-    font-size: 30px;
-    text-align: center;
-    font-family: 'Marvel', sans-serif;
-}
-
-#pNames {
-    display: flex;
-    justify-content: center;
-    font-family: 'Marvel', sans-serif;
-}
-
-
-.visit, .areaPic {
-    display: none;
-}
-
-#workers {
-   margin-left: 50px;
-}
-
-.staff-card {
-    display: block;
-    margin-top: 150px;
-}
-
-.staffies {
-    font-size: 1rem;
-    height: 440px;
-}
-
-/* gallery and contact */
-.down3, .up {
-    display: none;
-}
-
-.main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 }
