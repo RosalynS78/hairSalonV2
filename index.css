@@ -1505,6 +1505,15 @@ html body {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 40px;
+    }
+
+    .sideA {
+        width: 50%;
+    }
+
+    .sideB {
+        width: 50%;
     }
 
     .contact,
@@ -1608,7 +1617,11 @@ html body {
     }
 
     .sideA {
-        width: 50%;
+        width: 60%;
+    }
+
+    .sideB {
+        width: 40%;
     }
 
     .copy {
