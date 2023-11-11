@@ -3,13 +3,13 @@ html body {
     justify-content: center;
     scroll-behavior: smooth;
     height: 100vh;
+    width: 100vw;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -26,6 +26,8 @@ html body {
     background-image: url('assets/logo/headerbg2.jpg');
     background-repeat: no-repeat;
     background-size: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .home {
@@ -109,6 +111,11 @@ html body {
         transform: translateY(0px);
     }
 }
+
+/* #menuHead {
+   margin-right: 0;
+   padding-right: 0;
+} */
 
 /* horizontal menu */
 #horizontal {
@@ -721,7 +728,6 @@ html body {
     display: flex;
     border-style: solid;
     margin-top: 2%;
-    justify-content: center;
 }
 
 /* staff avatars */
@@ -846,6 +852,8 @@ html body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .staffies {
@@ -869,6 +877,7 @@ html body {
 .down2 {
     display: flex;
     margin-top: 30%;
+    padding: 20px;
 }
 
 /*-------------------------gallery---------------------------------------*/
@@ -1128,6 +1137,13 @@ html body {
 /* laptop */
 @media (max-width: 992px) {
 
+    .container {
+        display: block;
+        width: 135vw;
+        margin: 0;
+        padding: 0;
+    }
+
     /* home */
     .header {
         background-image: url('assets/logo/headerbg.jpg');
@@ -1153,40 +1169,43 @@ html body {
     }
 
     #blowDryer {
-        margin-left: 80%;
+        margin-left: 60%;
+        margin-top: 150px;
     }
 
     #girlHero {
-        height: 80%;
-        width: 80%;
+        height: 75%;
+        margin-top: 30px;
     }
 
     #girlHero2 {
-        height: 80%;
-        width: 80%;
+        height: 75%;
     }
 
     #sectionHome {
         margin-top: 2rem;
+
     }
 
     .card-0 {
-        width: 200px;
-        height: 236px;
+        width: 175px;
+        height: 245px;
     }
 
     .card-0 .cardHeading {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: black;
     }
 
     .card-0 .hours {
-        font-size: 1rem;
+        font-size: .6rem;
     }
 
-    .description {
-        font-size: 2rem;
-        margin-left: 18rem;
+    .description,
+    .visit,
+    .salonArea,
+    .social {
+        display: none;
     }
 
     .scroll {
@@ -1194,26 +1213,25 @@ html body {
     }
 
     .down1 {
-        margin-right: 2rem;
+        margin-left: 10px;
     }
 
     .card-1 {
-        height: 324px;
-        width: 30px;
+        width: 30%;
+
     }
 
     .card-1 .para {
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     .card-2 {
-        height: 325px;
-        width: 20px;
+        width: 30%;
         margin-right: 1rem;
     }
 
     .card-2 .para {
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     /* about */
@@ -1231,7 +1249,7 @@ html body {
     }
 
     #workers img {
-        width: 85px;
+        width: 65px;
     }
 
     .visit {
@@ -1240,44 +1258,48 @@ html body {
     }
 
     .salonArea {
-        height: 18vh;
+        height: 15vh;
+    }
+
+    .staff-card {
+        margin-right: 450px;
     }
 
     .staffies {
         height: 300px;
-        margin-right: 240px;
         font-size: .8rem;
     }
 
     .down2 {
-        margin-left: 14rem;
+        margin-left: 1rem;
     }
 
     /* gallery */
 
     .main {
-        width: 85vw;
+        width: 75vw;
     }
+
 }
 
 /* tablet */
 @media (max-width: 768px) {
     .container {
         display: block;
+        width: 100%;
         margin: 0;
-   
+        padding: 0;
     }
+
 
     #sectionHome {
         display: block;
         height: 30%;
-        padding: 45px;
     }
 
     #main {
         display: block;
         position: relative;
-        padding-left: 45px;
     }
 
     .home {
@@ -1301,8 +1323,7 @@ html body {
     .hairlogo,
     .card-1,
     .card-2,
-    #horizontal,
-    #girlHero3 {
+    #horizontal {
         display: none;
     }
 
@@ -1396,7 +1417,8 @@ html body {
         position: relative;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         margin-top: 20px;
-        margin-bottom: 260px;
+        margin-bottom: 20px;
+        padding: 85px;
         font-family: 'Marvel', sans-serif;
         font-weight: bold;
     }
@@ -1455,12 +1477,11 @@ html body {
 
     /* about */
     #sectionAbout {
-        height: 20%;
-        padding: 45px;
+        display: block;
     }
 
     #pMeet {
-        font-size: 30px;
+        font-size: 1rem;
         text-align: center;
         font-family: 'Marvel', sans-serif;
     }
@@ -1469,31 +1490,31 @@ html body {
         display: flex;
         justify-content: center;
         font-family: 'Marvel', sans-serif;
+        font-size: .6rem;
     }
 
-
     .visit,
-    .areaPic {
+    .areaPic, #girlHero3 {
         display: none;
     }
 
     #workers {
-      padding-left: 85px;
-     
+        padding: 2px;
     }
-
-   
 
     .staff {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         padding: 40px;
     }
 
     .staff-card {
         display: block;
-        justify-content: flex-start;
-        margin-top: 150px;
+        margin-bottom: 25px;
+    }
+
+    .staffies {
+        margin-left: 80px;
     }
 
     /* gallery and contact */
@@ -1506,12 +1527,12 @@ html body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 40px;
+        padding: 30px;
     }
 
     .sideA {
         width: 50%;
-        padding: 95px;
+        padding: 35px;
     }
 
     .sideB {
@@ -1532,17 +1553,11 @@ html body {
     .SS {
         border-radius: 0;
     }
+
 }
 
 /* phone */
 @media (max-width: 576px) {
-    .container {
-        display: block;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        width: 100vh;
-    }
 
     #sectionHome {
         display: block;
@@ -1590,37 +1605,41 @@ html body {
         justify-content: center;
     }
 
-
-    #workers img {
-        width: 50px;
-        margin-left: 50px;
+    #pMeet {
+        font-size: .8rem;
     }
 
-    #pMeet {
-        margin-left: 50px;
+    #workers img {
+        width: 35px;
+    }
+
+    #pNames {
+        font-size: .5rem;
     }
 
     #workers {
-        padding-left: 30px;
+        padding: 15px;
     }
 
-
-    .staffies {
-        width: 55%;
-        height: 85%;
-        margin-left: 45px;
-        margin-bottom: 10px;
-        font-size: .8rem;
-        padding: 5px;
+    .staffies{
+        font-size: .6rem;
+        margin-left: 25px;
+        width: 60vw;
     }
 
     .sideA {
-        width: 60%;
-        padding: 95px;
+        width: 30%;
+        padding: 45px;
+        font-size: .7rem;
+        margin-right: 15px;
+
     }
 
     .sideB {
         width: 40%;
+        padding: 25px;
+        font-size: .7rem;
+        margin-left: 120px;
     }
 
     .copy {
@@ -1630,7 +1649,12 @@ html body {
     }
 
     .main {
-        padding: 40px;
+        padding: 60px;
+    }
+
+    .footer {
+        font-size: .5rem;
+        padding: 10px;
     }
 
 }
