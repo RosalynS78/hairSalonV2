@@ -927,7 +927,7 @@ html body {
 }
 
 .card-content {
-    background: #FFF url('assets/gallery/1-1.avif') 40% / cover no-repeat;
+    background: #FFF url('assets/gallery/1.jpg') 40% / cover no-repeat;
     border-radius: 0.25rem;
     cursor: pointer;
     flex: 1;
@@ -937,20 +937,20 @@ html body {
 }
 
 .card-content:nth-of-type(2) {
-    background-image: url('assets/gallery/2-2.avif');
+    background-image: url('assets/gallery/2.jpg');
 
 }
 
 .card-content:nth-of-type(3) {
-    background-image: url('assets/gallery/3-3.avif');
+    background-image: url('assets/gallery/3.jpg');
 }
 
 .card-content:nth-of-type(4) {
-    background-image: url('assets/gallery/4-4.avif');
+    background-image: url('assets/gallery/4.jpg');
 }
 
 .card-content:last-of-type {
-    background-image: url('assets/gallery/5-5.avif');
+    background-image: url('assets/gallery/5.jpg');
 }
 
 .card-title {
@@ -1494,17 +1494,18 @@ html body {
     }
 
     .visit,
-    .areaPic, #girlHero3 {
+    .areaPic,
+    #girlHero3 {
         display: none;
     }
 
     #workers {
-        padding: 2px;
+        padding-left: 420px;
     }
 
     .staff {
-        display: flex;
-        flex-direction: row;
+        display: block;
+
         padding: 40px;
     }
 
@@ -1514,7 +1515,7 @@ html body {
     }
 
     .staffies {
-        margin-left: 80px;
+        margin-left: 10px;
     }
 
     /* gallery and contact */
@@ -1573,13 +1574,13 @@ html body {
     }
 
     .title1 {
-        font-size: 3.5rem;
+        font-size: 2rem;
         margin-top: 6rem;
         text-align: center;
     }
 
     .title2 {
-        font-size: 2.6rem;
+        font-size: 2rem;
         margin: 0;
         padding: 0;
         align-content: center;
@@ -1591,55 +1592,76 @@ html body {
         display: none;
     }
 
-    .hidden1,
-    .hidden2,
-    .card-0 {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .card-0,
-    .hidden1,
-    .hidden2 {
-        display: block;
-        justify-content: center;
-    }
-
-    #pMeet {
+    .hidden1 .hidden1Para {
         font-size: .8rem;
     }
 
-    #workers img {
-        width: 35px;
+    .hidden1 .hidden1Heading {
+        font-size: 1.5rem;
     }
 
-    #pNames {
+    .hidden2 .hidden2Para {
+        font-size: .8rem;
+    }
+
+    .hidden2 .hidden2Heading {
+        font-size: 1.5rem;
+    }
+
+    .card-0 .cardHeading {
+        font-size: 1.5rem;
+    }
+
+    .card-0 .hours {
+        font-size: .8rem;
+    }
+
+    .card-0 .cardBtn {
         font-size: .5rem;
     }
 
+    .hidden1 .hidden1Btn {
+        font-size: .5rem;
+    }
+
+    .hidden2 .hidden2Btn {
+        font-size: .5rem;
+    }
+
+
+    #pMeet,
     #workers {
-        padding: 15px;
+        display: none;
     }
 
-    .staffies{
-        font-size: .6rem;
-        margin-left: 25px;
-        width: 60vw;
+    #sectionAbout {
+        display: block;
     }
 
-    .sideA {
-        width: 30%;
-        padding: 45px;
-        font-size: .7rem;
-        margin-right: 15px;
+    .staff-card,
+    .staffies {
+        display: block;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 
+    #barbie-info,
+    #harry-info,
+    #sally-info {
+        display: block;
+        padding: 1em;
+        margin: 0;
+
+    }
+
+    #sectionContact {
+        display: block;
     }
 
     .sideB {
-        width: 40%;
-        padding: 25px;
-        font-size: .7rem;
-        margin-left: 120px;
+        width: 100%;
     }
 
     .copy {
@@ -1649,12 +1671,15 @@ html body {
     }
 
     .main {
-        padding: 60px;
+        padding: 30px;
+
     }
 
     .footer {
+        justify-content: center;
         font-size: .5rem;
         padding: 10px;
     }
+
 
 }
