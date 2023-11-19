@@ -43,14 +43,7 @@
           <!-- open menu -->
           <span style="font-size: 25px; cursor:pointer" onclick="openNav()"> &#9776;</span>
         </div>
-        <!-- burger menu -->
-        <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a style="--clr:#ffff00" data-text="home" href="#sectionHome">Home</a>
-          <a style="--clr:#ffa500" data-text="about" href="#sectionAbout">About</a>
-          <a style="--clr:#ffc0cb" data-text="gallery" href="#sectionGallery">Gallery</a>
-          <a style="--clr:#8812a5" data-text="contact" href="#sectionContact">Contact</a>
-        </div>
+       
       </div>
       <!-- home section -->
       <section id="sectionHome">
@@ -246,36 +239,36 @@
       <!-- contact section -->
       <section id="sectionContact">
         <div class="sideA">
-          <div class="radioStyle">
+          <div class="checkboxStyle">
             <form action="/check">
               <details>
                 <summary id="cuts">
                   Cuts
                 </summary>
-                <input type="radio" name="men">Men's Cut</input><br>
-                <input type="radio" name="women">Women's Cut</input><br>
-                <input type="radio" name="kid">Kid's Cut</input><br>
+                <input type="checkbox" name="men">Men's Cut</input><br>
+                <input type="checkbox" name="women">Women's Cut</input><br>
+                <input type="checkbox" name="kid">Kid's Cut</input><br>
               </details>
               <br>
               <details>
                 <summary id="style">
                   Style
                 </summary>
-                <input type="radio" name="updos">Updo's</input><br>
-                <input type="radio" name="curls">Curls</input><br>
-                <input type="radio" name="straighten">Straighten</input><br>
-                <input type="radio" name="events">Special Events</input><br>
+                <input type="checkbox" name="updos">Updo's</input><br>
+                <input type="checkbox" name="curls">Curls</input><br>
+                <input type="checkbox" name="straighten">Straighten</input><br>
+                <input type="checkbox" name="events">Special Events</input><br>
               </details>
               <br>
               <details>
                 <summary id="style">
                   Other
                 </summary>
-                <input type="radio" name="color">Color</input><br>
-                <input type="radio" name="highlights">Highlight's</input><br>
-                <input type="radio" name="balayage">Balayage</input><br>
-                <input type="radio" name="perm">Perms</input><br>
-                <input type="radio" name="relaxers">Relaxers</input><br>
+                <input type="checkbox" name="color">Color</input><br>
+                <input type="checkbox" name="highlights">Highlight's</input><br>
+                <input type="checkbox" name="balayage">Balayage</input><br>
+                <input type="checkbox" name="perm">Perms</input><br>
+                <input type="checkbox" name="relaxers">Relaxers</input><br>
               </details>
             </form>
           </div>
@@ -331,6 +324,14 @@
           </div>
         </div>
         <!-- end footer -->
+      </div>
+       <!-- burger menu -->
+       <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a style="--clr:#ffff00" data-text="home" href="#sectionHome">Home</a>
+        <a style="--clr:#ffa500" data-text="about" href="#sectionAbout">About</a>
+        <a style="--clr:#ffc0cb" data-text="gallery" href="#sectionGallery">Gallery</a>
+        <a style="--clr:#8812a5" data-text="contact" href="#sectionContact">Contact</a>
       </div>
       <!-- end header -->
     </div>

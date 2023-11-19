@@ -1531,11 +1531,17 @@ input[type="radio"] {
         border-radius: 0;
     }
 
+    .menu {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
 }
 
 /* phone */
 @media (max-width: 576px) {
-
+ 
     #sectionHome {
         display: block;
         justify-items: center;
@@ -1659,5 +1665,11 @@ input[type="radio"] {
 
     #icons img {
         height: 2.5rem;
+    }
+
+    .menu {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
     }
 }
