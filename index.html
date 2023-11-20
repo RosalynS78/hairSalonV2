@@ -38,12 +38,19 @@
         <div class="btn"><a href="#sectionContact">CONTACT</a></div>
       </div>
       <!-- burger menu -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a style="--clr:#ffff00" data-text="home" href="#sectionHome">Home</a>
+        <a style="--clr:#ffa500" data-text="about" href="#sectionAbout">About</a>
+        <a style="--clr:#ffc0cb" data-text="gallery" href="#sectionGallery">Gallery</a>
+        <a style="--clr:#8812a5" data-text="contact" href="#sectionContact">Contact</a>
+      </div>
+      <!-- burger menu -->
       <div class="menu">
-        <div id="main">
+        <div id="burger">
           <!-- open menu -->
           <span style="font-size: 25px; cursor:pointer" onclick="openNav()"> &#9776;</span>
         </div>
-       
       </div>
       <!-- home section -->
       <section id="sectionHome">
@@ -212,7 +219,7 @@
         </div>
         <div class="gallery">
           <!-- elastic accordion 2 -->
-          <main class="main">
+          <div class="main">
             <input class="card-radio" type="radio" name="card" id="card-1" />
             <label class="card-content" for="card-1">
               <h2 class="card-title">Sexy</h2>
@@ -233,7 +240,7 @@
             <label class="card-content" for="card-5">
               <h2 class="card-title">Playful</h2>
             </label>
-          </main>
+          </div>
         </div>
       </section>
       <!-- contact section -->
@@ -324,14 +331,6 @@
           </div>
         </div>
         <!-- end footer -->
-      </div>
-       <!-- burger menu -->
-       <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a style="--clr:#ffff00" data-text="home" href="#sectionHome">Home</a>
-        <a style="--clr:#ffa500" data-text="about" href="#sectionAbout">About</a>
-        <a style="--clr:#ffc0cb" data-text="gallery" href="#sectionGallery">Gallery</a>
-        <a style="--clr:#8812a5" data-text="contact" href="#sectionContact">Contact</a>
       </div>
       <!-- end header -->
     </div>

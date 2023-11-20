@@ -23,7 +23,7 @@ html body {
 
 .header {
     grid-area: header;
-    background-image: url('assets/logo/headerbg2.jpg');
+    background-image: url("assets/logo/headerbg2.jpg");
     background-repeat: no-repeat;
     background-size: auto;
     margin: 0;
@@ -62,14 +62,13 @@ html body {
     display: flex;
     flex-direction: row;
     margin: 1.5% 0 0 1%;
-
 }
 
 .title1 {
     display: flex;
     justify-content: center;
     margin-top: 16%;
-    font-family: 'Rubik Wet Paint', cursive;
+    font-family: "Rubik Wet Paint", cursive;
     font-size: 6.5rem;
 }
 
@@ -86,7 +85,6 @@ html body {
     height: 220%;
     margin: 120% 0 0% 30%;
     padding: 5%;
-
 }
 
 .hairlogo {
@@ -122,7 +120,7 @@ html body {
     display: flex;
     justify-content: center;
     margin-top: 0;
-    font-family: 'Marvel', sans-serif;
+    font-family: "Marvel", sans-serif;
     font-weight: bold;
 }
 
@@ -168,17 +166,17 @@ html body {
 }
 
 .containerMenu .btn:hover a {
-    Letter-spacing: 3px;
+    letter-spacing: 3px;
 }
 
 .containerMenu .btn a::before {
-    content: '';
+    content: "";
     position: absolute;
     transition: 0.5s;
 }
 
 .containerMenu .btn::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -197,7 +195,7 @@ html body {
 }
 
 .containerMenu .btn::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -214,43 +212,30 @@ html body {
     width: 80%;
     border-radius: 30px;
     transition-delay: 0.5s;
-
 }
 
 .containerMenu .btn:nth-child(1)::before,
 .containerMenu .btn:nth-child(1)::after {
     background: rgb(255, 255, 0);
-    box-shadow: 0 0 5px yellow,
-        0 0 15px yellow,
-        0 0 30px yellow,
-        0 0 60px yellow;
+    box-shadow: 0 0 5px yellow, 0 0 15px yellow, 0 0 30px yellow, 0 0 60px yellow;
 }
 
 .containerMenu .btn:nth-child(2)::before,
 .containerMenu .btn:nth-child(2)::after {
     background: orange;
-    box-shadow: 0 0 5px orange,
-        0 0 15px orange,
-        0 0 30px orange,
-        0 0 60px orange;
+    box-shadow: 0 0 5px orange, 0 0 15px orange, 0 0 30px orange, 0 0 60px orange;
 }
 
 .containerMenu .btn:nth-child(3)::before,
 .containerMenu .btn:nth-child(3)::after {
     background: pink;
-    box-shadow: 0 0 5px pink,
-        0 0 15px pink,
-        0 0 30px pink,
-        0 0 60px pink;
+    box-shadow: 0 0 5px pink, 0 0 15px pink, 0 0 30px pink, 0 0 60px pink;
 }
 
 .containerMenu .btn:nth-child(4)::before,
 .containerMenu .btn:nth-child(4)::after {
     background: purple;
-    box-shadow: 0 0 5px purple,
-        0 0 15px purple,
-        0 0 30px purple,
-        0 0 60px purple;
+    box-shadow: 0 0 5px purple, 0 0 15px purple, 0 0 30px purple, 0 0 60px purple;
 }
 
 /* burger menu */
@@ -259,11 +244,11 @@ html body {
     margin-top: 0%;
 }
 
-#main {
+#burger {
     display: none;
     background-color: black;
     color: white;
-    transition: margin-left .5s;
+    transition: margin-left 0.5s;
     padding: 14px;
 }
 
@@ -280,7 +265,7 @@ html body {
     /* Stay at the top */
     left: 0;
     /* transparency */
-    opacity: .8;
+    opacity: 0.8;
     background-color: #111111;
     /* Black*/
     overflow-x: hidden;
@@ -296,7 +281,7 @@ html body {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 35px;
-    font-family: 'Rubik Wet Paint', cursive;
+    font-family: "Rubik Wet Paint", cursive;
     color: transparent;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
     display: block;
@@ -316,7 +301,7 @@ html body {
 
 .sidenav a:hover::before {
     width: 80%;
-    filter: drop-shadow(0 0 25px var(--clr))
+    filter: drop-shadow(0 0 25px var(--clr));
 }
 
 .sidenav .closebtn {
@@ -346,7 +331,7 @@ html body {
 }
 
 #sectionHome {
-    background-image: url('assets/logo/contentBg.jpg');
+    background-image: url("assets/logo/contentBg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -370,7 +355,7 @@ html body {
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-top: 160px;
-    font-family: 'Marvel', sans-serif;
+    font-family: "Marvel", sans-serif;
     font-weight: bold;
 }
 
@@ -436,9 +421,7 @@ html body {
 .card-1 .cardBtn:hover {
     /* background: #6f7a85; */
     background: black;
-    box-shadow: 0 0 5px fuchsia,
-        0 0 15px fuchsia,
-        0 0 30px fuchsia,
+    box-shadow: 0 0 5px fuchsia, 0 0 15px fuchsia, 0 0 30px fuchsia,
         0 0 60px fuchsia;
     color: white;
     border-style: none;
@@ -477,7 +460,7 @@ html body {
     /* top, right, bottom left*/
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-top: 350px;
-    font-family: 'Marvel', sans-serif;
+    font-family: "Marvel", sans-serif;
     font-weight: bold;
 }
 
@@ -532,10 +515,7 @@ html body {
     /* background: #6f7a85;
     color: #ffffffaf; */
     background: black;
-    box-shadow: 0 0 5px yellow,
-        0 0 15px yellow,
-        0 0 30px yellow,
-        0 0 60px yellow;
+    box-shadow: 0 0 5px yellow, 0 0 15px yellow, 0 0 30px yellow, 0 0 60px yellow;
     color: white;
     border-style: none;
 }
@@ -570,7 +550,7 @@ html body {
     background: white;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    font-family: 'Marvel', sans-serif;
+    font-family: "Marvel", sans-serif;
     font-weight: bold;
 }
 
@@ -615,10 +595,7 @@ html body {
 .card-0 .cardBtn:hover {
     /* background: #6f7a85; */
     background: black;
-    box-shadow: 0 0 5px teal,
-        0 0 15px teal,
-        0 0 30px teal,
-        0 0 60px teal;
+    box-shadow: 0 0 5px teal, 0 0 15px teal, 0 0 30px teal, 0 0 60px teal;
     color: white;
     border-style: none;
 }
@@ -637,9 +614,9 @@ html body {
     margin-top: 600px;
     font-size: 3rem;
     font-weight: 100px;
-    font-family: 'Rubik Wet Paint', cursive;
+    font-family: "Rubik Wet Paint", cursive;
     color: purple;
-    -webkit-text-stroke: .05px black;
+    -webkit-text-stroke: 0.05px black;
 }
 
 /* social icons */
@@ -702,7 +679,7 @@ html body {
 }
 
 #sectionAbout {
-    background-image: url('assets/logo/contentBg.jpg');
+    background-image: url("assets/logo/contentBg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -719,13 +696,13 @@ html body {
 
 #pMeet {
     font-size: 30px;
-    font-family: 'Marvel', sans-serif;
+    font-family: "Marvel", sans-serif;
 }
 
 #pNames {
     display: flex;
     justify-content: center;
-    font-family: 'Marvel', sans-serif;
+    font-family: "Marvel", sans-serif;
 }
 
 #workers img {
@@ -757,7 +734,7 @@ html body {
     margin-left: 80px;
     font-size: 3rem;
     font-weight: 100px;
-    font-family: 'Rubik Wet Paint', cursive;
+    font-family: "Rubik Wet Paint", cursive;
     color: purple;
     -webkit-text-stroke: 1px black;
 }
@@ -848,7 +825,7 @@ html body {
     background: white;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    font-family: 'Marvel', sans-serif;
+    font-family: "Marvel", sans-serif;
     font-size: 1rem;
     font-weight: bold;
     justify-content: center;
@@ -874,7 +851,7 @@ html body {
 }
 
 #sectionGallery {
-    background-image: url('assets/logo/contentBg.jpg');
+    background-image: url("assets/logo/contentBg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -908,7 +885,7 @@ html body {
 }
 
 .card-content {
-    background: #FFF url('assets/gallery/1.jpg') 40% / cover no-repeat;
+    background: #fff url("assets/gallery/1.jpg") 40% / cover no-repeat;
     border-radius: 0.25rem;
     cursor: pointer;
     flex: 1;
@@ -918,26 +895,25 @@ html body {
 }
 
 .card-content:nth-of-type(2) {
-    background-image: url('assets/gallery/2.jpg');
-
+    background-image: url("assets/gallery/2.jpg");
 }
 
 .card-content:nth-of-type(3) {
-    background-image: url('assets/gallery/3.jpg');
+    background-image: url("assets/gallery/3.jpg");
 }
 
 .card-content:nth-of-type(4) {
-    background-image: url('assets/gallery/4.jpg');
+    background-image: url("assets/gallery/4.jpg");
 }
 
 .card-content:last-of-type {
-    background-image: url('assets/gallery/5.jpg');
+    background-image: url("assets/gallery/5.jpg");
 }
 
 .card-title {
     align-items: center;
     background-color: rgb(0 0 0 / 35%);
-    color: #FFF;
+    color: #fff;
     display: flex;
     font-size: 2.2rem;
     inset: 0;
@@ -1010,11 +986,11 @@ html body {
 
 .up {
     display: flex;
-    margin-left: 40%
+    margin-left: 40%;
 }
 
 #sectionContact {
-    background-image: url('assets/logo/contentBg.jpg');
+    background-image: url("assets/logo/contentBg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -1029,7 +1005,7 @@ html body {
     flex-direction: column;
     display: flex;
     padding: 20px;
-    font-family: 'Marvel', sans-serif;
+    font-family: "Marvel", sans-serif;
     font-size: 1rem;
 }
 
@@ -1038,7 +1014,7 @@ html body {
     display: flex;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.778);
-    font-family: 'Marvel', sans-serif;
+    font-family: "Marvel", sans-serif;
     font-size: 1rem;
 }
 
@@ -1051,18 +1027,15 @@ html body {
     height: 25rem;
 }
 
-
 input[type="reset"],
 input[type="submit"],
 input[type="radio"] {
     background-color: purple;
     accent-color: purple;
     color: #fff;
-    padding: .3em;
-    border-radius: .5em;
-
+    padding: 0.3em;
+    border-radius: 0.5em;
 }
-
 
 /* ------------------------footer---------------------------------------*/
 */ .footer {
@@ -1112,7 +1085,6 @@ input[type="radio"] {
 
 /* laptop */
 @media (max-width: 992px) {
-
     .container {
         display: block;
         width: 135vw;
@@ -1122,7 +1094,7 @@ input[type="radio"] {
 
     /* home */
     .header {
-        background-image: url('assets/logo/headerbg.jpg');
+        background-image: url("assets/logo/headerbg.jpg");
         margin: 0 15% 0 15%;
     }
 
@@ -1160,7 +1132,6 @@ input[type="radio"] {
 
     #sectionHome {
         margin-top: 2rem;
-
     }
 
     .card-0 {
@@ -1174,7 +1145,7 @@ input[type="radio"] {
     }
 
     .card-0 .hours {
-        font-size: .6rem;
+        font-size: 0.6rem;
     }
 
     .description,
@@ -1194,11 +1165,10 @@ input[type="radio"] {
 
     .card-1 {
         width: 30%;
-
     }
 
     .card-1 .para {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 
     .card-2 {
@@ -1207,7 +1177,7 @@ input[type="radio"] {
     }
 
     .card-2 .para {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 
     /* about */
@@ -1221,7 +1191,7 @@ input[type="radio"] {
     }
 
     #pNames {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 
     #workers img {
@@ -1243,7 +1213,7 @@ input[type="radio"] {
 
     .staffies {
         height: 300px;
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 
     .down2 {
@@ -1255,7 +1225,6 @@ input[type="radio"] {
     .main {
         width: 75vw;
     }
-
 }
 
 /* tablet */
@@ -1267,15 +1236,20 @@ input[type="radio"] {
         padding: 0;
     }
 
-
     #sectionHome {
         display: block;
         height: 30%;
     }
 
-    #main {
+    #burger,
+    .menu {
         display: block;
         position: relative;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        /* shows above container */
+        z-index: 1;
     }
 
     .home {
@@ -1327,7 +1301,7 @@ input[type="radio"] {
         position: relative;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         margin-top: 20px;
-        font-family: 'Marvel', sans-serif;
+        font-family: "Marvel", sans-serif;
         font-weight: bold;
     }
 
@@ -1370,9 +1344,7 @@ input[type="radio"] {
 
     .hidden1 .hidden1Btn:hover {
         background: black;
-        box-shadow: 0 0 5px fuchsia,
-            0 0 15px fuchsia,
-            0 0 30px fuchsia,
+        box-shadow: 0 0 5px fuchsia, 0 0 15px fuchsia, 0 0 30px fuchsia,
             0 0 60px fuchsia;
         color: white;
         border-style: none;
@@ -1395,7 +1367,7 @@ input[type="radio"] {
         margin-top: 20px;
         margin-bottom: 20px;
         padding: 85px;
-        font-family: 'Marvel', sans-serif;
+        font-family: "Marvel", sans-serif;
         font-weight: bold;
     }
 
@@ -1438,9 +1410,7 @@ input[type="radio"] {
 
     .hidden2 .hidden2Btn:hover {
         background: black;
-        box-shadow: 0 0 5px yellow,
-            0 0 15px yellow,
-            0 0 30px yellow,
+        box-shadow: 0 0 5px yellow, 0 0 15px yellow, 0 0 30px yellow,
             0 0 60px yellow;
         color: white;
         border-style: none;
@@ -1459,14 +1429,14 @@ input[type="radio"] {
     #pMeet {
         font-size: 1rem;
         text-align: center;
-        font-family: 'Marvel', sans-serif;
+        font-family: "Marvel", sans-serif;
     }
 
     #pNames {
         display: flex;
         justify-content: center;
-        font-family: 'Marvel', sans-serif;
-        font-size: .6rem;
+        font-family: "Marvel", sans-serif;
+        font-size: 0.6rem;
     }
 
     .visit,
@@ -1521,7 +1491,7 @@ input[type="radio"] {
     .contact,
     .footer {
         display: block;
-        font-size: .9rem;
+        font-size: 0.9rem;
         text-align: center;
     }
 
@@ -1530,18 +1500,10 @@ input[type="radio"] {
     .SS {
         border-radius: 0;
     }
-
-    .menu {
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-    }
-
 }
 
 /* phone */
 @media (max-width: 576px) {
- 
     #sectionHome {
         display: block;
         justify-items: center;
@@ -1575,7 +1537,7 @@ input[type="radio"] {
     }
 
     .hidden1 .hidden1Para {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 
     .hidden1 .hidden1Heading {
@@ -1583,7 +1545,7 @@ input[type="radio"] {
     }
 
     .hidden2 .hidden2Para {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 
     .hidden2 .hidden2Heading {
@@ -1595,21 +1557,20 @@ input[type="radio"] {
     }
 
     .card-0 .hours {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 
     .card-0 .cardBtn {
-        font-size: .5rem;
+        font-size: 0.5rem;
     }
 
     .hidden1 .hidden1Btn {
-        font-size: .5rem;
+        font-size: 0.5rem;
     }
 
     .hidden2 .hidden2Btn {
-        font-size: .5rem;
+        font-size: 0.5rem;
     }
-
 
     #pMeet,
     #workers {
@@ -1635,7 +1596,6 @@ input[type="radio"] {
         display: block;
         padding: 1em;
         margin: 0;
-
     }
 
     #sectionContact {
@@ -1648,28 +1608,21 @@ input[type="radio"] {
 
     .copy {
         display: block;
-        font-size: .7rem;
+        font-size: 0.7rem;
         text-align: center;
     }
 
     .main {
         padding: 30px;
-
     }
 
     .footer {
         justify-content: center;
-        font-size: .5rem;
+        font-size: 0.5rem;
         padding: 10px;
     }
 
     #icons img {
         height: 2.5rem;
-    }
-
-    .menu {
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
     }
 }
