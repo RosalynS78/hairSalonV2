@@ -249,7 +249,7 @@ html body {
     background-color: black;
     color: white;
     transition: margin-left 0.5s;
-    padding: 14px;
+    padding: 10px;
 }
 
 .sidenav {
@@ -1244,8 +1244,6 @@ input[type="radio"] {
     #burger,
     .menu {
         display: block;
-        position: relative;
-        position: -webkit-sticky;
         position: sticky;
         top: 0;
         /* shows above container */
